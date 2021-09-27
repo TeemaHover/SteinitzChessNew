@@ -7,8 +7,12 @@
 
 .ourGalleryBox {
     height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
