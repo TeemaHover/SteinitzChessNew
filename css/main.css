@@ -545,6 +545,12 @@ h2 {
     border-radius: 10%;
 }
 
+@media (-webkit-device-pixel-ratio: 1) {
+    .teachersBox img {
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width:600px) {
     .swiperBox img {
         max-width: 90%;

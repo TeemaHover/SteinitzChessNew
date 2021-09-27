@@ -70,6 +70,12 @@ svg:hover {
     display: block;
 }
 
+@media screen and(max-width:600px) {
+    #nav:hover .link-text {
+        display: block;
+    }
+}
+
 #nav:hover {
     width: 16rem;
 }
