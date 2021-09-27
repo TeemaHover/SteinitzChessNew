@@ -10,7 +10,7 @@
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .videoBody {
@@ -35,7 +35,7 @@
 
 @media screen and (max-width:600px) {
     .videoBody {
-        margin-top: 20%;
+        margin-top: 0%;
     }
 }
 
@@ -107,8 +107,8 @@
 }
 
 .videoTextBack {
-    width: 600px;
-    height: 600px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     background: black;
     -webkit-transform: rotate(45deg);
@@ -120,16 +120,7 @@
 
 @media screen and (max-width:600px) {
     .videoTextBack {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        background: black;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        z-index: -1;
-        opacity: 0.89;
-        margin-top: 25%;
+        margin-top: 55%;
     }
 }
 
