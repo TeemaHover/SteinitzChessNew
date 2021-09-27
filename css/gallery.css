@@ -87,7 +87,7 @@
 
 @media screen and (max-width:600px) {
     .modal {
-        margin-left: 100%;
+        margin-left: 0%;
     }
 }
 
@@ -108,7 +108,7 @@
 
 @media screen and (max-width:600px) {
     .modal-ceo {
-        margin-left: 100%;
+        margin-left: 0%;
     }
 }
 
