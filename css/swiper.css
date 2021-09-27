@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .swiper {
     width: auto;
     height: 100vh;
 }
 
 .swiper-slide h1 {
+    -webkit-animation: fadeInUp;
     animation: fadeInUp;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -119,6 +128,8 @@
 
 .swiperTraining .swiper-button-next {
     color: rgb(254, 221, 0);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     margin-right: 10%;
     margin-top: 20%;
@@ -126,6 +137,8 @@
 
 .swiperTraining .swiper-button-prev {
     color: rgb(254, 221, 0);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     margin-left: 10%;
     margin-top: -23%;
