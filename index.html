@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/chessTable.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/training.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://res.cloudinary.com/veseylab/raw/upload/v1597754760/magicmouse/magic-mouse-1.0.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Chess</title>
+</head>
+
+<body>
+    <div class="swiper">
+        <section id="nav">
+            <div class="navContainer">
+
+                <div class="navFIT">
+                    <h1 id="closeNav">X</h1>
+                    <img src="./imgs/LogoBlack.png" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <button onclick="slideTo(0)">
+                        
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                            data-icon="chess-king" class="svg-inline--fa fa-chess-king fa-w-14" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M400 448H48a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h352a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm16-288H256v-48h40a8 8 0 0 0 8-8V56a8 8 0 0 0-8-8h-40V8a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v40h-40a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8h40v48H32a32 32 0 0 0-30.52 41.54L74.56 416h298.88l73.08-214.46A32 32 0 0 0 416 160z">
+                            </path>
+                        </svg>
+                        <span class="link-text">Нүүр</span>
+                        
+                        </button></li>
+                    <li>
+                        <button onclick="slideTo(1)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="chess-queen" class="svg-inline--fa fa-chess-queen fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M256 112a56 56 0 1 0-56-56 56 56 0 0 0 56 56zm176 336H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h352a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm72.87-263.84l-28.51-15.92c-7.44-5-16.91-2.46-22.29 4.68a47.59 47.59 0 0 1-47.23 18.23C383.7 186.86 368 164.93 368 141.4a13.4 13.4 0 0 0-13.4-13.4h-38.77c-6 0-11.61 4-12.86 9.91a48 48 0 0 1-93.94 0c-1.25-5.92-6.82-9.91-12.86-9.91H157.4a13.4 13.4 0 0 0-13.4 13.4c0 25.69-19 48.75-44.67 50.49a47.5 47.5 0 0 1-41.54-19.15c-5.28-7.09-14.73-9.45-22.09-4.54l-28.57 16a16 16 0 0 0-5.44 20.47L104.24 416h303.52l102.55-211.37a16 16 0 0 0-5.44-20.47z">
+                                </path>
+                            </svg>
+                            <span class="link-text">Бидний тухай</span>
+                        </buttton>
+                        
+                    </li>
+                    <li><button onclick="slideTo(2)"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="chess-rook" class="svg-inline--fa fa-chess-rook fa-w-12" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M368 32h-56a16 16 0 0 0-16 16v48h-48V48a16 16 0 0 0-16-16h-80a16 16 0 0 0-16 16v48H88.1V48a16 16 0 0 0-16-16H16A16 16 0 0 0 0 48v176l64 32c0 48.33-1.54 95-13.21 160h282.42C321.54 351 320 303.72 320 256l64-32V48a16 16 0 0 0-16-16zM224 320h-64v-64a32 32 0 0 1 64 0zm144 128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h352a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                </path>
+                            </svg>
+                            <span class="link-text">Мэдээлэл</span></buttton>
+                    </li>
+                    <li><button onclick="slideTo(3)"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="chess-knight" class="svg-inline--fa fa-chess-knight fa-w-12" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M19 272.47l40.63 18.06a32 32 0 0 0 24.88.47l12.78-5.12a32 32 0 0 0 18.76-20.5l9.22-30.65a24 24 0 0 1 12.55-15.65L159.94 208v50.33a48 48 0 0 1-26.53 42.94l-57.22 28.65A80 80 0 0 0 32 401.48V416h319.86V224c0-106-85.92-192-191.92-192H12A12 12 0 0 0 0 44a16.9 16.9 0 0 0 1.79 7.58L16 80l-9 9a24 24 0 0 0-7 17v137.21a32 32 0 0 0 19 29.26zM52 128a20 20 0 1 1-20 20 20 20 0 0 1 20-20zm316 320H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h352a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                </path>
+                            </svg><span class="link-text">Хамт олон</span></buttton>
+                    </li>
+                    <li><button onclick="slideTo(4)"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="chess-bishop" class="svg-inline--fa fa-chess-bishop fa-w-10" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M8 287.88c0 51.64 22.14 73.83 56 84.6V416h192v-43.52c33.86-10.77 56-33 56-84.6 0-30.61-10.73-67.1-26.69-102.56L185 285.65a8 8 0 0 1-11.31 0l-11.31-11.31a8 8 0 0 1 0-11.31L270.27 155.1c-20.8-37.91-46.47-72.1-70.87-92.59C213.4 59.09 224 47.05 224 32a32 32 0 0 0-32-32h-64a32 32 0 0 0-32 32c0 15 10.6 27.09 24.6 30.51C67.81 106.8 8 214.5 8 287.88zM304 448H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                </path>
+                            </svg><span class="link-text">Сургалт</span></buttton>
+                    </li>
+                    <li><button onclick="slideTo(5)"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="chess-pawn" class="svg-inline--fa fa-chess-pawn fa-w-10" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M105.1 224H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h16v5.49c0 44-4.14 86.6-24 122.51h176c-19.89-35.91-24-78.51-24-122.51V288h16a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-25.1c29.39-18.38 49.1-50.78 49.1-88a104 104 0 0 0-208 0c0 37.22 19.71 69.62 49.1 88zM304 448H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                </path>
+                            </svg><span class="link-text">Тун удахгүй</span></buttton>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+        <a class="icon" id="burgerBtn">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" id="page1">
+                
+                <div class="headSlide">
+                    
+                    <div class="headSlideLeft">
+                        <div class="headSlideLeftContainer">
+                            <div class="headSlideImg">
+                                <img src="./imgs/LogoBlack.png" alt="">
+                            </div>
+                            <div class="headSlideText">
+                                <h1>ACADEMIC</h1>
+                                <h2>Chess</h2>
+                                <p>Best chess Sets,Tablets & Clock</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headSlideRight">
+                        <div class="homeBackKing">
+                            <img src="./imgs/HomeBackKing.png" alt="">
+                        </div>
+                        <div class="homeBack">
+                            <img src="./imgs/homeBack.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="page2">
+                <section id="aboutUs">
+
+                    <div style="width: 1500px; display: flex;">
+                        <div class="aboutUsLeft">
+                            <div class="aboutUsLeftContainer">
+                                <div class="aboutUsLeftContainer1">
+                                    <h1>01</h1>
+                                    <h2>Бидний тухай</h2>
+                                </div>
+                                <div class="aboutUsLeftContainer2" data-swiper-animation="fadeInLeft" data-duration="1s" data-delay="1.25s">
+
+                                    <p style="margin-top: 5%;">Стейниц Монголын Шатрын Академи нь 2019 оны 9 сард
+                                        Дэлхийн Шатрын Холбооны Мастер
+                                        Гижирийн МӨНХБАЯР-ын санаачлагаар үүсгэн байгуулагдсан ба 1 /нэг/ жилийн дотор
+                                        Монгол Улсын Өсвөрийн Улсын Аварга Шалгаруулах Тэмцээнд багаараа гутгаар байранд
+                                        орж Монголын топ 3 шатрын сургалтын төвийн нэг болсон билээ.</p>
+                                    <p>Өдгөө 7 багштай,
+                                        нийт 10 орчим ажилчидтай, өсвөрийн 100 хүүхэд, насанд хүрсэн 50 орчим суралцагч
+                                        тасралтгүй хичээллэж байна. Академи нь үүсгэн байгуулагдсан цагаас клубийн
+                                        статусаас салж жилийн сургалтын хөтөлбөртэйгээр урт хугацаанд бэлтгэл
+                                        сургуулилтаар хангаж шатрын мэргэжилтэй, мэргэжилтэн, шилдэг тамирчидыг
+                                        бэлтгэхэд зорилго, үйл ажиллагаагаа чиглүүлэн эрчимтэй ажиллаж байна. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aboutUsRight">
+                            <img src="./imgs/aboutUs.JPG" alt="">
+                            
+                        </div>
+                        <div class="abouUsBackChess" >
+                            <img src="./imgs/noyn.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide" id="page3">
+                <div class="rankBack"></div>
+                <section id="rank">
+                    <div class="rankTop">
+                        <h1 style="color: #FEDD00;">ШАТРЫН УХААНЫГ АМЬДРАЛД</h1>
+                        <h2 style="color: white;"> </h2>
+                    </div>
+                    <div class="rankMiddle">
+                        <div class="rankMiddleImg">
+                            <div class="rankMiddleImgFit"><img src="./imgs/advantages1.JPG" alt=""></div>
+                            <div class="rankMiddleImgFit">
+                                <img id="myBtn" src="./imgs/advantages2.JPG" alt="">
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="ourGallery">
+
+                                            <div class="ourGalleryContainer">
+                                                <div class="ourGalleryBack"></div>
+                                                <div class="swiper2">
+                                                    <div class="swiper-wrapper">
+
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin1.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin2.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin3.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin4.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin5.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin6.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin7.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin8.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin9.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="ourGalleryBox">
+                                                                <img src="./imgs/Ga;;ery/orchin10.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-pagination"></div>
+
+
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rankMiddleImgFit">
+                                <img id="myBtn1" src="./imgs/advantages3.JPG" alt="">
+                                <div id="myModal1" class="modal-ceo">
+                                    <div class="modal-content-ceo">
+                                        <span class="close close1">&times;</span>
+                                        <div class="ceo">
+                                            <div class="ceoContainer">
+                                                <div class="ceoContainerLeft">
+                                                    <img src="./imgs/chessCeo.PNG" alt="">
+                                                </div>
+                                                <div class="ceoContainerRight">
+                                                    <h1>Acedemic chess for kids</h1>
+                                                    <p>Kids Chess Club is a non-profit Company founded by International
+                                                        Chess Master Larry Evans and Tom Callaghan as a way to provide
+                                                        more chess classes to more kids.</p>
+                                                    <p>Our goal is to teach children in grades K-12 abstract concepts of
+                                                        planning, analysis and strategy through the game of chess. Kids
+                                                        will be excited to understand and amazed by the positive
+                                                        experience that chess offers.</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="ceoContainerBottom">
+                                                <p>"</p>
+                                                <h3>lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h3>
+                                                <p>"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rankMiddleText">
+                            <div class="rankMiddleTextFit">
+                                <h3>Зорилго</h3>
+                            </div>
+                            <div class="rankMiddleTextFit">
+                                <h3>Орчин</h3>
+                            </div>
+                            <div class="rankMiddleTextFit">
+                                <h3>Үүсгэн байгуулагч</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rankBottom">
+                        <p>СТЕЙНИЦ МОНГОЛЫН ШАТРЫН АКАДЕМИД ТАВТАЙ МОРИЛНО УУ!</p>
+                    </div>
+                    <div class="rankBackChess" >
+                        <img src="./imgs/bers.png" alt="">
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide" id="page4">
+                <div class="rankBack"></div>
+                <div class="teachers">
+                    <div class="teachersContainer">
+
+                        <div class="swiperTeachers">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="teachersBox">
+                                        <img src="./imgs/ankhbayr.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBox">
+                                        <img src="./imgs/batnym.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBox">
+                                        <img src="./imgs/muba.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBox">
+                                        <img src="./imgs/boldbaatar.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBox">
+                                        <img src="./imgs/anu.jpg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+
+                        <div class="swiperTeachersContent">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="teachersBoxContent">
+                                        <h3>Нэр: Б.Анхбаяр</h3>
+                                        <h3>Амжилт:</h3>
+                                        <ul>
+                                            <li>•	Өсвөрийн шатарчдын улсын аварга шалгаруулах өсвөрийн хамгийн том тэмцээнд 
+                                                4-р байр
+                                                </li>
+                                            <li>•	Аймгийн аварга шалгаруулах өсвөрийн шатрын тэмцээний 7 удаагийн босоо аварга. /Говь-Алтай аймаг/</li>
+                                            <li>•	Аймгийн аварга шалгаруулах өсвөрийн шатрын тэмцээний 7 удаагийн босоо аварга. /Говь-Алтай аймаг/</li>
+                                            <li>•	Монголын хүүхдийн ордны нэрэмжит “Цодгор хүү” ӨАШШТ шагналт 2-р байр. </li>
+                                            <li>•	Өсвөрийн улсын аварга шалгаруулах шатрын түргэвчилсэн төрөлд шагналт 3-р байр. </li>
+                                            <li>•	Улсын чанартай Монгол хүн сансарт ниссэний нэрэмжит Ирээдүйн одод ӨАШШТ 2-р байр, 4-р байр</li>
+                                            <li>•	Оюуны эрэлд 1200 хүүхдийн шатрын наадам 2015 он 1-р байр алтан медаль. </li>
+                                            <li>•	Аймгийн аварга шалгаруулах насанд хүрэгчидийн аварга шалгаруулах шатрын тэмцээн  2-р байр </li>
+                                        </ul>
+                                        <h3>Ажлын туршлага:</h3>
+                                        <ul>
+                                            <li>•	Стейниц МША-ийн 2021 оны зуны эрчимжүүлсэн 50 хүүхдийн сургалтыг удирдан багшилсан.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBoxContent">
+                                        <h3>Нэр: М.Батням</h3>
+                                        <h3>Боловсрол:</h3>
+                                        <ul>
+                                            <li>•	Хөвсгөл аймгийн эрдмийн далай ЕБС-ийн төгсөгч 2021</li>
+
+                                        </ul>
+                                        <h3>Амжилт:</h3>
+                                        <ul>
+                                            <li>•	201 9он Монгол улсын cпортын “Дэд мастер”</li>
+                                            <li>•	5-н удаагийн ӨААШШТ-ний Аварга, 3-н удаагийн Дэд байр</li>
+                                            <li>•	Насанд хүрэгчдийн ААШШТ-ний Аварга, Дэд байр</li>
+                                            <li>•	ӨУАШШТ-ний шагналт 5,6-р байр</li>
+                                            <li>•	2019 он Хүүхдийн спортын Их наадамд 5-р байр</li>
+                                            <li>•	Булган 2011 бүсийн тэмцээний аварга</li>
+                                            <li>•	2016 он Төвийн бүсийн аварга Эрдэнэт хот</li>
+                                            <li>•	201 3он Sri Lanka улсад зохиогдсон Азийн аваргад 10-р байранд амжилттай оролцсон.</li>
+                                        </ul>
+                                        <h3>Ажлын туршлага:</h3>
+                                        <ul>
+                                            <li>•	Стейниц МША-ийг үүсгэн байгуулагдсан цагаас эхлэн анхан шатаас ахисан шатад зааж сургаж туршлагажсан. </li>
+                                            <li>•	10-н жилийн сургууль болон цэцэрлэгт гэрээт багшаар ажилласан ба цэцэрлэгийн өмнөх насны хүүхдэд шатрын боловсрол олгох чадвар өндөр.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBoxContent">
+                                        <h3>Нэр: Г.Энхбаяр</h3>
+                                        <h3>Боловсрол:</h3>
+                                        <ul>
+                                            <li>•	Авто инженер мэргэжилтэй, Хятадын Шилийн Гол хот, Zhi Ye Xue Xiao Их сургууль </li>
+                                        </ul>
+                                        <h3>Амжилт:</h3>
+                                        <ul>
+                                            <li>•	Монгол Улсын Дэд Мастер цол </li>
+                                            <li>•	2010 онд Хятадад зохиогдсон өсвөрийн шатарчдын ази тивийн аварга шалгаруулах тэмцээнд амжилттай оролцсон. </li>
+                                        </ul>
+                                        <h3>Ажлын туршлага:</h3>
+                                        <ul>
+                                            <li>•	- Стейниц МША-ийн Салбар 2-ийг хариуцан нэг жилийн хугацаанд ажилласан. </li>
+                                            <li>•	- Академиас бүтээсэн хамгийн шинэлэг, системчлэгдсэн 3 багц, 9 сар, 108 видео хичээл бүхий цахим шатрын сургалтыг хамтран үүсгэн байгуулагч. </li>
+                                            <li>•	- Академиас хэрэгжүүлсэн хамгийн анхны системчлэгдсэн анхан шатны 100 хүүхдэд зориулсан 6 сарын шатрын төсөл дээр хамтран ажиллаж амжилттай хэрэгжүүлсэн.</li>
+                                            <li>•	- Олонлог ЕБС-д 1 жилийн турш шатрын багшаар ажиллаж байсан. </li>
+                                            <li>•	- “Баялаг Бөмбөөхэй” цэцэрлэгт шатрын багшаар 1 жилийн турш ажиллаж байсан ба сургуулийн өмнөх боловсролын хүүхдүүдэд заах чадвартай.</li>
+                                            <li>•	- Мончесс МБША-аас хэрэгжүүлсэн төслийн хүрээнд “57-р цэцэрлэг”-д 6 сар шатрын багшаар ажиллаж байсан ба сургуулийн өмнөх боловсролын хүүхдүүдэд заах чадвартай.</li>
+                                            <li>•	- 79-р ЕБСургуульд 1 жилд шатрын тусгай хөтөлбөр хэрэгжүүлсэн.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBoxContent">
+                                        <h3>Нэр: Б.Болдбаатар</h3>
+                                        
+                                        <h3>Боловсрол:</h3>
+                                        <ul>
+                                            <li>•	Биеийн тамирын багш баклавр-МҮБТДС</li>
+                                            <li>•	Боловсрол судлалын магистр-МУБИС</li>
+                                            
+                                        </ul>
+                                        <h3>Амжилт:</h3>
+                                        <ul>
+                                            <li>•	 FI, Дэлхийн шатрын холбооны зөвлөх дасгалжуулагч цол </li>
+                                            <li>•	Шатрын спортын Монгол улсын шүүгч </li>
+                                            <li>•	Монгол улсын Спортын мастер </li>
+                                            <li>•	Биеийн тамир спортын тэргүүний ажилтан 2010</li>
+                                            <li>•	Ардын боловсролын тэргүүний ажилтан 2013</li>
+                                            <li>•	Алтан гадас одон 2015</li>
+                                        </ul>
+                                        <h3>Ажлын туршлага:</h3>
+                                        <ul>
+                                            <li>•	36 жил Монголын шатрын хөгжилийг чиглүүлэгч, түүчээлэгч болж ажилласан туршлагатай</li>
+                                            <li>•	Монголын Үйлдвэрчиний Эвлэлийн “Цагаан Бэрс” шатрын клуб тэргүүтэй 30 орчим байгууллагад ажиллаж, хөгжүүлж, удирдаж ирсэн. </li>
+                                            <li>•	Анхан шатнаас ахисан хүртэл системтэй хөгжих шатрын тактик сэтгэлгээ хөгжүүлэх цуврал 30 номны зохиогч. Уг номыг академид дасгал ажлын ном болгон аишгладаг.</li>
+                                            <li>•	Стейниц МША-ийн багт элсээд, зөвлөх багшаар 1 жил ажиллаж буй. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="teachersBoxContent">
+                                        <h3>Нэр: Б.Ану</h3>
+                                        <h3>Боловсрол:</h3>
+                                        <ul>
+                                            <li>•	Инженерчлэлын ухааны бакалавр, МУИС, Мэргэжил: Электроник, автоматик 2011-2015 </li>
+                                            <li>•	Олон улсын харилцааны магистр, МУИС </li>
+                                        </ul>
+                                        <h3>Амжилт:</h3>
+                                        <ul>
+                                            <li>• ОУХМ Шатрын спортын төрлөөр МУ-ын Олон улсын хэмжээний мастер цол (2010 он) </li>
+                                            <li>• WFM Дэлхийн шатрын холбооны мастер цол (2011 он) </li>
+                                            <li>• FI Дэлхийн шатрын холбооны зөвлөх дасгалжуулагч цол (2016 он) </li>
+                                            <li>• FA Дэлхийн шатрын холбооны шүүгчийн 2 балл (2016, 2017 он) </li>
+                                            <li>• WIM Дэлхийн шатрын холбооны Олон улсын мастерын 2 балл (2018, 2019 он) </li>
+                                            <li>• WGM Дэлхийн шатрын холбооны Их мастерын 1 балл (2018 он) </li>
+                                            <li>• Сонирхогчдын дэлхийн аварга шалгаруулах тэмцээний алт, мөнгөн медаль (2010, 2011 он) </li>
+                                            <li>• Сурагчдын дэлхийн аварга шалгаруулах тэмцээний мөнгөн медаль (2008 он) </li>
+                                            <li>• Азийн оюутны аварга шалгаруулах тэмцээний хүрэл медаль (2015 он) </li>
+                                            <li>• Азийн хүүхдийн спортын IV их наадмын IV байр (2008 он) </li>
+                                            <li>• Сюзан Полгарын нэрэмжит дэлхийн нээлттэй тэмцээний I байр (2010 он) </li>
+                                            <li>• Бүх Америкийн охидын аварга шалгаруулах “Гран-При” тэмцээний I байр (2010 он) </li>
+                                            <li>• Олон улсын оюутны “Гран-При” тэмцээний IV байр (2016 он) </li>
+                                            <li>• Насанд хүрэгчдийн түргэн тоглолтын улсын аварга шалгаруулах тэмцээний хүрэл медаль (2007 он) </li>
+                                            <li>• Насанд хүрэгчдийн улсын аварга шалгаруулах тэмцээнд 9 удаа шалгарч оролцсон </li>
+                                            <li>• Оюутны улсын аварга шалгаруулах тэмцээний 1 алт, 2 мөнгө, 1 хүрэл медаль (2012, 2016, 2019 он) </li>
+                                            <li>• Монголын хүүхдийн спортын II, III их наадмын алт, мөнгөн медаль (2003, 2007 он) </li>
+                                            <li>• Өсвөрийн улсын аварга шалгаруулах тэмцээний 3 алт, 2 мөнгө, 2 хүрэл медаль (2005-2011 он) </li>
+                                        </ul>
+                                        <h3>Ажлын туршлага:</h3>
+                                        <ul>
+                                            <li>•	2016 оноос Дэлхийн шатрын холбооны зөвлөх дасгалжуулагч</li>
+                                            <li>•	2017 оноос АНУ дахь ерөнхий боловсролын сурагчдад шатрын багш, дасгалжуулагч </li>
+                                            <li>•	2017.03 - 2017.06 Гадаад харилцааны яамны Америк, Ойрхи Дорнод, Африкийн газарт Магистрын мэргэжлийн дадлага </li>
+                                            <li>•	2019.11 – 2021.01 Монголын шатрын холбооны Гадаад харилцаа хариуцсан мэргэжилтэн 2019 оноос Монголын шатрын холбооны Удирдах зөвлөлийн гишүүн
+                                                2019 оноос Монголын шатрын холбооны Шүүгчдийн зөвлөлийн дарга
+                                                2019.11 - 2021.01 Монголын шатрын холбооны албан ёсны хуудасны хөтлөгч 
+                                                </li>
+                                            <li>•	2019.11 – 2021.01 Монголын шатрын холбооны Гадаад харилцаа хариуцсан мэргэжилтэн 2019 оноос Монголын шатрын холбооны Удирдах зөвлөлийн гишүүн
+                                                2019 оноос Монголын шатрын холбооны Шүүгчдийн зөвлөлийн дарга
+                                                2019.11 - 2021.01 Монголын шатрын холбооны албан ёсны хуудасны хөтлөгч 
+                                                </li>
+                                            <li>•	2021 оноос “Pro Queens Gambit” АНУ-ын цахим шатрын сургалтын төвийн ахлах дасгалжуулагч </li>
+                                            <li>•	2021 оноос “Стейниц Монголын Шатрын Академи”-д</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="teachersBackChess">
+                        <div class="teachersBackChessLeft" >
+                            <img src="./imgs/tereg.png" alt="">
+                            <img src="./imgs/mori.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="page5">
+                <div class="swiperTraining">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" id="main">
+                            <section id="replayTraining">
+                                <div class="replayHeading">
+                                    <h1>Сургалт</h1>
+                                </div>
+                                <div class="replayTrainingContainer">
+                                    <div style="border-right: white solid 1px;" class="replayTrainingBox">
+                                        <h3>НАСАНД ХҮРЭГЧДИЙН СУРГАЛТ</h3>
+                                        <img id="" onclick="slideToTraining(1)"
+                                            class="animate__animated animate__pulse animate__infinite myBtnLesson"
+                                            src="./imgs/king.png" alt="">
+                                            
+                                        
+                                    </div>
+                                    <div style="border-right: white solid 1px;" class="replayTrainingBox">
+                                        <h3>СТЕЙНИЦ МША-ИЙН ХҮҮХДИЙН ҮНДСЭН АНГИЙН СУРГАЛТ</h3>
+                                        <img id="" onclick="slideToTraining(2)"
+                                            class="animate__animated animate__pulse animate__infinite myBtnLesson"
+                                            src="./imgs/queen.png" alt="">
+                                        
+                                    </div>
+                                    <div class="replayTrainingBox">
+                                        <h3>СТЕЙНИЦ МША-ИЙН МЭРГЭЖЛИЙН АНГИЙН СУРГАЛТ</h3>
+                                        <img id="" onclick="slideToTraining(3)"
+                                            class="animate__animated animate__pulse animate__infinite myBtnLesson"
+                                            src="./imgs/rook.png" alt="">
+                                        
+                                    </div>
+                                    <div style="border-right: white solid 1px; border-top: 1px solid rgba(255, 255, 255, 0.5);"
+                                        class="replayTrainingBox">
+                                        <h3>СТЕЙНИЦ МШ-ИЙН ХҮҮХДИЙН ЦАХИМ СУРГАЛТ </h3>
+                                        <img onclick="slideToTraining(4)"
+                                            class="animate__animated animate__pulse animate__infinite myBtnLesson"
+                                            src="./imgs/knight.png" alt="">
+                                        
+                                    </div>
+                                    <div style="border-right: 1px solid rgba(255, 255, 255, 0.5); border-top: 1px solid rgba(255, 255, 255, 0.5);"" class="
+                                        replayTrainingBox">
+                                        <h3>СТЕЙНИЦ МША-ИЙН ГАНЦААРЧИЛСАН СУРГАЛТ </h3>
+                                        <img id="" onclick="slideToTraining(5)"
+                                            class="animate__animated animate__pulse animate__infinite myBtnLesson"
+                                            src="./imgs/bishop.png" alt="">
+                                        
+                                    </div>
+                                    <div style="border-top: 1px solid rgba(255, 255, 255, 0.5);" class="replayTrainingBox">
+                                        <h3>СТЕЙНИЦ МША-ИЙН АМРАЛТЫН ӨДРИЙН СУРГАЛТ</h3>
+                                        <img id="" onclick="slideToTraining(6)"
+                                            class="animate__animated animate__pulse animate__infinite myBtnLesson"
+                                            src="./imgs/pawn.png" alt="">
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="lessonContainer">
+
+                                <div class="lessonLeftContainer">
+                                    <img id="" width="50px"
+                                        class="animate__animated animate__tada animate__infinite myBtnLesson"
+                                        src="./imgs/king.png" alt="">
+                                    <h1>НАСАНД ХҮРЭГЧДИЙН СУРГАЛТ</h1>
+                                    <ul>
+                                        <li onclick="slideToLesson1(0)">Сургалтын зорилго</li>
+                                        <li onclick="slideToLesson1(1)">Сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson1(2)">Сургалтын мэдээлэл</li>
+                                        <li onclick="slideToLesson1(3)">Төлбөр</li>
+                                        <li onclick="slideToLesson1(4)">Нэмэлт мэдээлэл</li>
+                                        <li onclick="slideToTraining(0)" style="font-weight: bold;">Буцах</li>
+                                    </ul>
+                                </div>
+                                <div class="lessonRightContainer">
+                                    <div class="swiperLessonRight1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын зорилго</h1>
+                                                        <p>Шатар сонирхогчдод мэргэжлийн шатарчин хүний онолын гүн
+                                                            мэдлэг, харах өнцөг, сэтгэлзүй, тодорхой туршлага гэх
+                                                            томоохон ур чадваруудаас суулгаж өгөх ба ирээдүйд 1-3 жилийн
+                                                            дотор Монгол улсын дэд мастер, спортын мастер цолын болзол
+                                                            хангуулах чухал элементүүдийг хичээлийн багц дундаа шингээж
+                                                            хүргэх мөн мянга мянган жил батлагдан ирсэн шатрын
+                                                            менежментийн ухаан болох стратеги, тактикийн гүн ойлголт,
+                                                            эрсдэл бага, өгөөж өндөр, шийдвэр гаргалт, үндэслэлтэй
+                                                            тооцоолох, эрсдэлийг нүүдэл тутамдаа бодох, алсыг харах,
+                                                            үнэлэн дүгнэх, тодорхой байрлалд өрсөлдөгчөө таамаглан
+                                                            унших, мэдрэх зэрэг амьдралд хэрэгтэй ухагдахуунуудыг
+                                                            шатраар дамжуулан өгөхөд оршино.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын давуу тал</h1>
+                                                        <ul>
+                                                            <li>- Заагдах хичээл нь 18 жил шатрын спортоор хичээллэсэн,
+                                                                6 жил мэргэжлийн дасгалжуулагчаар ажилласан, академийн
+                                                                үүсгэн байгуулагч, дэлхийн шатрын холбооны мастер,
+                                                                сонирхогчдын дэлхийн аварга, хөрөнгө оруулагч, санхүүч
+                                                                мэргэжилтэй, munkhbayar's chess youtube сувгийн хөтлөгч
+                                                                Мөнхбаяр дасгалжуулагчийн боловсруулсан хөтөлбөрийн
+                                                                дагуу хичээл явагдана.</li>
+                                                            <li>- Үндсэн видео хичээлийг бататгах, суралцагчийн
+                                                                тоглолтын алдаа оноог тодорхойлох, цаашид хэрхэн
+                                                                хичээллэх хувь хүнд тохирсон арга барилыг боловсруулж
+                                                                өгөх зэрэг дадлагажуулах, туршлагажуулах зорилгоор
+                                                                танхимаар амьд харилцааг Мөнхбаяр багштай үүсгэх
+                                                                хичээлтэй. </li>
+                                                            <li>- Академийн боловсруулсан зүүн тархи хөгжүүлэх дасгал
+                                                                болох шатрын бодлого дасгал ажлын цуврал номыг өгнө.
+                                                                Энэхүү дасгал ажлуудыг өдөр бүр тогтмол шалгаж,
+                                                                тооцоолох чадварыг нэмэгдүүлнэ. Цахим хэлбэрээр тогтмол
+                                                                алдаа, оноог шалгаж зөвлөмжийг тогтмол өгнө. </li>
+                                                            <li>- Ангид цахим тоглолтын баг үүсгэж 7 хоног бүр тогтмол 1
+                                                                удаагийн тэмцээнийг хийж байх болно. Энэхүү хоорондоо
+                                                                тоглох тэмцээний өрөг дээр Мөнхбаяр багш өөрөө шинжилгээ
+                                                                хийж, алдаа оноог видео хичээл болгон байршуулах болно.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- 7 хоногт 3 хичээл байршуулна. /Даваа, Лхагва, Баасан/
+                                                                1 багцад 9 хичээл байрших тул 1 багцийг 21 хоногоор
+                                                                бодож болно. Дараагийн хичээл байрших үед өмнөх хичээл
+                                                                нь идэвхигүй болно. Өмнөх өмнөх ангийн туршлагаас үзэхэд
+                                                                хичээлээ тэмдэглэгээ хийж үзээгүйгээс болж хичээл устах
+                                                                үед нээлгүүлэх хүсэлт их ирүүлж байсан. Тийм боломж
+                                                                байхгүй тул анхнаасаа бичиж, тэмдэглэж нухацтай үзэхийг
+                                                                шаардаж байна. </li>
+                                                            <li>- 7 хоногт 1 удаа /Бямба гариг/ 18:30-21:30 цагт анги
+                                                                дундах тэмцээн болно. Тоглолт нь цаг тааруулаад яг
+                                                                цагтаа эхэлдэг тул хоцрох үед нөгөөдөө нөлөөлөх тул
+                                                                хариуцлагатай тоглож байхыг шаардана. Тухайн өдөр тоглох
+                                                                боломжгүй болвол урьдчилан тэмцээндээ нэрээ идэвхигүй
+                                                                болговол нөгөөдөө нөлөөлөхгүй байна. Тэмцээний дараа
+                                                                Мөнхбаяр багш алдаа онооны зөволөмжийн видео оруулаад
+                                                                явна.</li>
+                                                            <li>- 6 багцийн Видео хичээл дууссаны дараагаар Даваа,
+                                                                Лхагва, Баасан гаригт ажлын цагийн дараа 18:30-20:30-д
+                                                                Мөнхбаяр багштай 3 удаагийн зэрэг тоглолт хийж зөвлөгөө
+                                                                авна. Мөн нэмэлт хичээл бодитоор орох юм. </li>
+                                                            <li>- Бодлогыг туслах багш тогтмол шалгаад явна. /Батням,
+                                                                Спортын дэд мастер/</li>
+                                                            <li>- Хичээлтэй холбоотой асуулт болон нэмэлт мэдээлэлтэй
+                                                                холбоотой асуултад Мөнхбаяр багш өөрөө хариулна. </li>
+                                                            <li>- 2-р багцийн дунд хэсэгээс танхим цуглаж чөлөөт
+                                                                тоглолтыг 7 хоногт 1 удаа академийн байранд зохиох
+                                                                төлөвтэй.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Төлбөрийн мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Нийт 6 багц хичээл. Үндсэндээ 54 видео хичээл,
+                                                                нэмэлтээр бодитоор 3 удаагийн практик тоглолт Мөнхбаяр
+                                                                багш гардаж хийнэ.</li>
+                                                            <li>- 6 багцийн үнэ 1,080,000₮</li>
+                                                            <li>- Төлбөрийг 3 хувааж төлөх боломжтой. /360,000₮/</li>
+                                                            <li>- Төлбөр төлөх данс: Хаан банк, 5018539912, Мөнхбаяр
+                                                            </li>
+                                                            <li>- Гүйлгээний утга: "Нэр, утас, сургалтын төлбөр" гэж
+                                                                бичээрэй. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Нэмэлт мэдээлэл</h1>
+                                                        <p>Ихэнх хүмүүс амьд харилцаатай хичээлд суухыг хүсдэг ч үнэхээр
+                                                            шатар сурах чин хүсэлтэй бол энэхүү дууны болон бичлэгийн
+                                                            гацалтгүй өндөр түвшинд бэлтгэгдсэн хичээлийг тухтай үзэж
+                                                            дуусгахад дараа нь танхимын болон цахимаар өшөө дээд шатруу
+                                                            амьд харилцаатай хичээл явагдахыг сануулая.
+
+                                                            Мөнхбаяр багшийн хувьд өмнө нь амьд харилцаатай заадаг
+                                                            байсан ч ачаалал их болж завгүй болсоны улмаас чанартай
+                                                            видео хичээл гаргах дээр ажилласан ба үүнээс цааш шатрын
+                                                            цолонд болон шатрын багшаар бэлтгэгдэхийг хүсвэл Мөнхбаяр
+                                                            багш өөрөө бие дааж туршлагажуулах ажилд оролцох юм.
+
+                                                            Гэхдээ энэхүү 6 багц 19 долоо хоногийн хичээлийг /сүүлийн 7
+                                                            хоног танхимын практик/ хүргэхэд ойлгоогүй зүйлс дээр
+                                                            асуулт, хариултад үргэлж Мөнхбаяр багш өөрөө хариулж оролцож
+                                                            байна. Мөн Бодлого шалгахад академийн Батням багш шалгаж,
+                                                            тогтмол бодлого гацалт дээр туслана.
+
+                                                            Энэхүү багц сургалтыг дуусгахад өмнөх манай идэвхитэй
+                                                            төгсөлтийн группт орж үе үе танхимийн кофетой тэмцээнийг
+                                                            хийж байх болно. Хичээл дундуур ч байх боломжтой. кк
+
+                                                            Сургалтад хамрагдсан танд баярлалаа. Амжилт хүсье.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="lessonContainer">
+
+                                <div class="lessonLeftContainer">
+                                    <img id="" width="50px"
+                                        class="animate__animated animate__tada animate__infinite myBtnLesson"
+                                        src="./imgs/queen.png" alt="">
+                                    <h1>СТЕЙНИЦ МША-ИЙН ХҮҮХДИЙН ҮНДСЭН АНГИЙН СУРГАЛТ</h1>
+                                    <ul>
+                                        <li onclick="slideToLesson2(0)">Сургалтын зорилго</li>
+                                        <li onclick="slideToLesson2(1)">Сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson2(2)">Сургалтын мэдээлэл</li>
+                                        <li onclick="slideToLesson2(3)">Төлбөр</li>
+                                        <li onclick="slideToLesson2(4)">Нэмэлт мэдээлэл</li>
+                                        <li onclick="slideToTraining(0)" style="font-weight: bold;">Буцах</li>
+                                    </ul>
+                                </div>
+                                <div class="lessonRightContainer">
+                                    <div class="swiperLessonRight2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын зорилго</h1>
+                                                        <p>Урт хугацаандаа шатрын мэргэжилтэй хувь хүмүүсийг бэлтгэх
+                                                            буюу шатрын цолонд хүргэх замаар амьдралын олон хувь
+                                                            чадваруудыг шатраас эзэмшсэн бие хүн болгон төлөвшүүлэхэд
+                                                            оршино.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын давуу тал</h1>
+                                                        <p>Сургалтын систем нь хүүхдэд ирээдүйд хэрэгтэй олон амьдралын
+                                                            болон хувь хүний чадварыг нээхэд түлхэц болон бэлтгэгдсэн.
+                                                        </p>
+                                                        <ul>
+                                                            <li>- Шатрын тоглолтын явц дунд тоглогч хэрхэн сэтгэл
+                                                                хөдлөлд автаж шийдвэр гаргаж байна, өрсөлдөгчөө хэрхэн
+                                                                мэдэрч байна зэрэг баруун тархины /EQ/ хөгжилд шатар
+                                                                хэрхэн нөлөөлж буйг, </li>
+                                                            <li>- Олон зүй тогтол бүхий шатрын бодлого, төгсгөлийн онол
+                                                                ажилласнаар тухайн хүүхдийн зүүн тархи /IQ/ хэрхэн
+                                                                хөгжиж тэлж буйг </li>
+                                                            <li>- Шатар дайнаас үүссэн гэдгийн цаана өөрт өгөгдсөн
+                                                                дүрсийг хүүхэд хэрхэн удирдаж, урт хугацааг харж
+                                                                төлөвлөгөө боловсруулж байна зэрэг удирдах ухааныг
+                                                                /Management/ шатраас хэрхэн ойлгож авч буйг</li>
+                                                            <li>- Аливаа шатрын тактикийн буюу тэсрэлттэй эсвэл
+                                                                стратегийн буюу төлөвлөгөө боловсруулах зэрэг байрлалд
+                                                                нарийн дүн шинжилгээ хийж, хамгийн эрсдэл бага, өгөөж
+                                                                өндөр шийдвэр гаргалтыг сонгох нь хувь хүнд хэрхэн
+                                                                шүүмжит сэтгэлгээ /Critical Thinking and Analysis/
+                                                                суулгахыг, энэ нь шатрын ямар дасгал ажлуудад нуун
+                                                                байдгийг </li>
+                                                            <li>- Суралцагч нар дасгал ажлууд хийх болон тэмцээн
+                                                                уралдаанд олон олон унаж босож тэмцэж буй үед багшийн
+                                                                өгч буй зөвлөгөө нь хүүхдэд өсөн, хөгжих сэтгэлгээг
+                                                                /Growth Mindset/ хэрхэн суулгах зэргийг сургалтын
+                                                                системдээ бага багаар нэвтрүүлэн хэрэгжүүлж байгаа нь
+                                                                манай академийн хамгийн том онцлог билээ. </li>
+                                                        </ul>
+                                                        <!-- <p>Дээрх чадварууд нь шатарт агуулагдсан байдаг ба академийн
+                                                            багш нар үүнийг ил гаргах дээр анхааран ажиллаж байна. Энэ
+                                                            нь хүүхдүүдэд богино хугацаанд зан төлөвт нь гүн суух
+                                                            боломжгүй тул академийн цахим сургалтыг 6 сар болгосон юм.
+                                                            Үүний дараа үндсэн ангируу элсүүлэн авч илүү нарийн
+                                                            хичээлүүд орно. Цахим ангийн гол үндсэн зорилго бол
+                                                            хүүхдүүдэд шатрын мэдлэг өгөхөөс гадна шатарт хайртай,
+                                                            дуртай болгоход оршино. </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Заагдах хичээл нь 18 жил шатрын спортоор хичээллэсэн,
+                                                                6 жил мэргэжлийн дасгалжуулагчаар ажилласан, академийн
+                                                                үүсгэн байгуулагч, дэлхийн шатрын холбооны мастер,
+                                                                сонирхогчдын дэлхийн аварга, хөрөнгө оруулалт, санхүүч
+                                                                мэргэжилтэй, munkhbayar's chess youtube сувгийн хөтлөгч
+                                                                Мөнхбаяр багшийн боловсруулсан хөтөлбөрийн дагуу хичээл
+                                                                явагдана. </li>
+                                                            <li>- Сургалтын төвөөс шатрын дасгал ажлын ном, шатрын
+                                                                тоглолтоо бичих өргийн бичлэгийн дэвтэр, Мөнхбаяр
+                                                                багшийн бичиж буй ном 2021 ондоо багтаж хэвлэлтээс
+                                                                гарахад тухайн ном зэрэг багтсан болно. Хэвлэлтээс
+                                                                гарахаас өмнө сэдэв сэдвээр хэвлэж, тараагдан заагдах
+                                                                болно. </li>
+                                                            <li>- Анги, танхимын тав тухтай байдал нь хүүхдийг
+                                                                суралцахад том түлхэц болдог ба үүгээр Монголын шатрын
+                                                                сургалтын төвүүд дунд тэргүүлж буй. </li>
+                                                            <li>- Академийн бүх багш нараас зөвлөгөө авч, бүгдтэй нь
+                                                                ажиллах боломжтой. </li>
+                                                            <li>- Анги даасан мэргэжлийн шатрын дасгалжуулагч байхаас
+                                                                гадна, 1 ангид нэмэлт 1 туслах багштай. </li>
+                                                            <li>- Мэргэжлийн ангид одоогоор 2 улсын аварга, 4 улсын
+                                                                медаль болон шагналтай хүүхдүүд, 4 өсвөрийн дэлхийн
+                                                                аваргад оролцсон хүүхдүүд хичээллэж байна. </li>
+                                                            <li>- Ахисан шатны ангид тасралтгүй 1 жил хичээллэсэн
+                                                                хүүхдүүд бэлтгэл сургуулилтаа хангаж байна. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Төлбөрийн мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- 1 сарын төлбөр 180,000₮, 6 сарын төлбөр 1,080,000₮
+                                                            </li>
+                                                            <li>- Төлбөрийг 3 сараар 2 хувааж төлнө. 3 сарын төлбөр
+                                                                540,000₮</li>
+                                                            <li>- Төлбөртэй холбоотой асуултыг 86003553 шууд Мөнхбаяр
+                                                                багштай ярина. </li>
+                                                            <li>- Хаан банк:
+                                                                5018539912
+                                                                Мөнхбаяр
+                                                            </li>
+                                                            <li> Гүйлгээний утга: "нэр, утас, сургалтын төлбөр" гэж
+                                                                бичнэ үү.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Нэмэлт мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>Манай академи нь жилд үндсэн 2 урт хугацаат сургалтын
+                                                                үйл ажиллагаа явуулдаг. </li>
+                                                            <li>• Намрын элсэлт /8 сарын эхнээс - 12 сар дуустал/</li>
+                                                            <li>• Хаврын элсэлт /1 сарын эхнээс - 5 сар дуустал/ </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="lessonContainer">
+
+                                <div class="lessonLeftContainer">
+                                    <img id="" width="50px"
+                                        class="animate__animated animate__tada animate__infinite myBtnLesson"
+                                        src="./imgs/rook.png" alt="">
+                                    <h1>СТЕЙНИЦ МША-ИЙЭ МЭРГЭЖЛИЙН АНГИЙН СУРГАЛТ</h1>
+                                    <ul>
+                                        <li onclick="slideToLesson3(0)">Сургалтын зорилго</li>
+                                        <li onclick="slideToLesson3(1)">Сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson3(2)">Сургалтын мэдээлэл</li>
+                                        <li onclick="slideToLesson3(3)">Төлбөр</li>
+                                        <li onclick="slideToLesson3(4)">Нэмэлт мэдээлэл</li>
+                                        <li onclick="slideToTraining(0)" style="font-weight: bold;">Буцах</li>
+                                    </ul>
+                                </div>
+                                <div class="lessonRightContainer">
+                                    <div class="swiperLessonRight3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын зорилго</h1>
+                                                        <p>Богино хугацаанд шатрын дотоодын болон гадаадын томоохон
+                                                            тэмцээн уралдаан мөн дэлхийн шатрын холбооны цолонд бэлтгэх
+                                                            өсвөрийн нас насны шилдэг тамирчид бэлтгэл сургуулилтаа
+                                                            эрчимтэйгээр, ачаалалтай хангах зорилготой анги юм.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын давуу тал</h1>
+                                                        <ul>
+                                                            <li>- Шатрын спортоор 10-с дээш жилийн туршлагатай, дэлхийн
+                                                                шатрын холбоонд хүлээн зөвшөөрөгдсөн, академийн
+                                                                тэргүүлэгч ахлах багш нар хичээлийг заана. </li>
+                                                            <li>- Цөөн хүүхэд байдаг тул суралцагч бүрийн хэв маяг,
+                                                                мэдлэг, туршлага, зан чанарт тохирсон байдлаар ачааллийг
+                                                                нэмж явна. Хичээлийн агуулга мөн суралцагч бүрт өөр өөр
+                                                                байх боломжтой. </li>
+                                                            <li>- Шатрын тоглолтын явц дунд тоглогч хэрхэн сэтгэл
+                                                                хөдлөлд автаж шийдвэр гаргаж байна, өрсөлдөгчөө хэрхэн
+                                                                мэдэрч байна зэрэг баруун тархины /EQ/ хөгжилд шатар
+                                                                хэрхэн нөлөөлж буйг, </li>
+                                                            <li>- Олон зүй тогтол бүхий шатрын бодлого, төгсгөлийн онол
+                                                                ажилласнаар тухайн хүүхдийн зүүн тархи /IQ/ хэрхэн
+                                                                хөгжиж тэлж буйг </li>
+                                                            <li>- Шатар дайнаас үүссэн гэдгийн цаана өөрт өгөгдсөн
+                                                                дүрсийг хүүхэд хэрхэн удирдаж, урт хугацааг харж
+                                                                төлөвлөгөө боловсруулж байна зэрэг удирдах ухааныг
+                                                                /Management/ шатраас хэрхэн ойлгож авч буйг</li>
+                                                            <li>- Аливаа шатрын тактикийн буюу тэсрэлттэй эсвэл
+                                                                стратегийн буюу төлөвлөгөө боловсруулах зэрэг байрлалд
+                                                                нарийн дүн шинжилгээ хийж, хамгийн эрсдэл бага, өгөөж
+                                                                өндөр шийдвэр гаргалтыг сонгох нь хувь хүнд хэрхэн
+                                                                шүүмжит сэтгэлгээ /Critical Thinking and Analysis/
+                                                                суулгахыг, энэ нь шатрын ямар дасгал ажлуудад нуун
+                                                                байдгийг </li>
+                                                            <li>- Суралцагч нар дасгал ажлууд хийх болон тэмцээн
+                                                                уралдаанд олон олон унаж босож тэмцэж буй үед багшийн
+                                                                өгч буй зөвлөгөө нь хүүхдэд өсөн, хөгжих сэтгэлгээг
+                                                                /Growth Mindset/ хэрхэн суулгах зэргийг сургалтын
+                                                                системдээ бага багаар нэвтрүүлэн хэрэгжүүлж байгаа нь
+                                                                манай академийн хамгийн том онцлог билээ.
+
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Заагдах хичээл нь 18 жил шатрын спортоор хичээллэсэн,
+                                                                6 жил мэргэжлийн дасгалжуулагчаар ажилласан, академийн
+                                                                үүсгэн байгуулагч, дэлхийн шатрын холбооны мастер,
+                                                                сонирхогчдын дэлхийн аварга, хөрөнгө оруулалт, санхүүч
+                                                                мэргэжилтэй, munkhbayar's chess youtube сувгийн хөтлөгч
+                                                                Мөнхбаяр багшийн боловсруулсан хөтөлбөрийн дагуу хичээл
+                                                                явагдана. </li>
+                                                            <li>- Цаашид мэргэжлийн шатрын дасгалжуулагчид нэмэгдэн
+                                                                энэхүү ангидд орох тул дэхийн супер тамирчид, багш
+                                                                нартай хамтран хөтөлбөрийг цаг тухай бүрт нь шинэчлэн
+                                                                боловсруулаад явна. </li>
+                                                            <li>- Сургалтын төвөөс шатрын дасгал ажлын ном, шатрын
+                                                                тоглолтоо бичих өргийн бичлэгийн дэвтэр, Мөнхбаяр
+                                                                багшийн бичиж буй ном 2021 ондоо багтаж хэвлэлтээс
+                                                                гарахад тухайн ном зэрэг багтсан болно. Хэвлэлтээс
+                                                                гарахаас өмнө сэдэв сэдвээр хэвлэж, тараагдан заагдах
+                                                                болно. </li>
+                                                            <li>- Анги, танхимын тав тухтай байдал нь хүүхдийг
+                                                                суралцахад том түлхэц болдог ба үүгээр Монголын шатрын
+                                                                сургалтын төвүүд дунд тэргүүлж буй. </li>
+                                                            <li>- Сургууль болохоор зорьж буй тул хичээллэх цаг ихтэй. 7
+                                                                хоногт 4 удаа, 1 орохдоо тэнхимийн 4 цаг. Сардаа 1 удаа
+                                                                идэвхжүүлэх нэмэлт үйл ажиллагаатай. </li>
+                                                            <li>- Академийн бүх багш нараас зөвлөгөө авч, бүгдтэй нь
+                                                                ажиллах боломжтой. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Төлбөрийн мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Мэргэжлийн ангийн 5 сарын төлбөр:1,850,000₮ төгрөг /1
+                                                                сараар бодвол 370,000/</li>
+                                                            <li>- Төлбөрийг 1 сарын хугацаатай 50%-лаж тушааж болно.
+                                                            </li>
+                                                            <li>- Уг сургалт маань сургуулиас гадна давхар шатрын
+                                                                мэргэжилтэн болгон бэлтгэх академи тул зөвхөн урт
+                                                                хугацаандаа бэлтгэл сургуулилт хийх, ерөнхий боловсролын
+                                                                сургуулиа төгсөх үед шатрын цолонд хүргэх гол
+                                                                зорилготойг эцэг, эхүүд сайтар ярилцан, мэдээлэл аван
+                                                                суралцаж эхлээрэй.</li>
+                                                            <li> - Төлбөр төлөгдөх данс: Хаан банк, 5018539912, Мөнхбаяр
+                                                            </li>
+                                                            <li> - Гүйлгээний утга: Суралцагчийн нэр, Утас, “Төлбөр” гэж
+                                                                бичнэ үү. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Нэмэлт мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Үндсэн хичээл орох өдрүүд Даваа, Мягмар, Пүрэв, Баасан
+                                                                /7 хоногт 4 удаа, 1 орохдоо тэнхимийн 40 минут*4 цаг/
+                                                            </li>
+                                                            <li>- Лхагва гариг сардаа нэг удаа идэвхжүүлэх үйл ажиллагаа
+
+                                                            </li>
+                                                            <li>- Лхагва гариг, амралтын өдрүүдэд нэмэлтээр багш нар нь
+                                                                тухайн үед нь дуудаж нэмэлт бэлтгэлийг хийнэ. </li>
+                                                            <li>- Мэргэжлийн түвшиний ХОЁР анги: Үүнд 8*2=16 хүүхэд
+                                                                байна. Нэмэлт 4 хүүхэд авна.</li>
+                                                            <li>- Мэргэжлийн ангид хүүхдийг бүртгэж авахдаа Мөнхбаяр
+                                                                багш шалгаж авна. </li>
+                                                            <li>- Цагийн сонголт /Ерөнхий боловсролын хичээл ороход
+                                                                цагийг солих боломжтой./</li>
+                                                            <li> Өглөөний анги: 09:00 - 11:40 </li>
+                                                            <li> Өдрийн анги: 15:00 - 17:40</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="lessonContainer">
+
+                                <div class="lessonLeftContainer">
+                                    <img id="" width="50px"
+                                        class="animate__animated animate__tada animate__infinite myBtnLesson"
+                                        src="./imgs/knight.png" alt="">
+                                    <h1>СТЕЙНИЦ МШ-ИЙН ХҮҮХДИЙН ЦАХИМ СУРГАЛТ </h1>
+                                    <ul>
+                                        <li onclick="slideToLesson4(0)">Сургалтын зорилго</li>
+                                        <li onclick="slideToLesson4(1)">Сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson4(2)">Сургалтын мэдээлэл</li>
+                                        <li onclick="slideToLesson4(3)">Cургалтын онцлог</li>
+                                        <li onclick="slideToLesson4(4)">Төлбөр</li>
+                                        <li onclick="slideToTraining(0)" style="font-weight: bold;">Буцах</li>
+                                    </ul>
+                                </div>
+                                <div class="lessonRightContainer">
+                                    <div class="swiperLessonRight4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын зорилго</h1>
+                                                        <p>Урт хугацаандаа шатрын мэргэжилтэй хувь хүмүүсийг бэлтгэх
+                                                            буюу шатрын цолонд хүргэх замаар амьдралын олон хувь
+                                                            чадваруудыг шатраас эзэмшсэн бие хүн болгон төлөвшүүлэхэд
+                                                            оршино. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын давуу тал</h1>
+                                                        <ul>
+                                                            <li>- Заагдах хичээл нь 18 жил шатрын спортоор хичээллэсэн,
+                                                                6 жил мэргэжлийн дасгалжуулагчаар ажилласан, академийн
+                                                                үүсгэн байгуулагч, дэлхийн шатрын холбооны мастер,
+                                                                сонирхогчдын дэлхийн аварга, хөрөнгө оруулалт, санхүүч
+                                                                мэргэжилтэй, munkhbayar's chess youtube сувгийн хөтлөгч
+                                                                Мөнхбаяр багшийн боловсруулсан хөтөлбөрийн дагуу хичээл
+                                                                явагдана. </li>
+                                                            <li>- Сургалтын төвөөс шатрын дасгал ажлын ном, 3 дахь
+                                                                сараас шатрын тоглолтоо бичих өргийн бичлэгийн дэвтэр
+                                                                дагалдах болно.</li>
+                                                            <li>- Академийн мэргэжлийн ангийн дасгалжуулагч цахим
+                                                                хиээлийг гардаж ордог. </li>
+                                                            <li>- Цахим сургалтад нэмэлт тоглолтын өдөр багтсан байх
+                                                                болно</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Сургалт 6 сар үргэлжилнэ. 1 сарын хөтөлбөр гэж манай
+                                                                академид байдаггүй байгаа. </li>
+                                                            <li>- 7 хоногт 3 удаагийн шууд хичээл /1 сард 12 хичээл/.
+                                                                Хичээл видео болж хадгалагдана. </li>
+                                                            <li>- Бодлогын ном өгч өдөр тутам шалгаад явна. Бодлого
+                                                                бодолт ямар чухал болох талаар дээр бичсэн болно. </li>
+                                                            <li>- 7 хоногтоо 2 удаа анги дундаа цахим тоглолт хийлгэнэ.
+                                                                Тоглолт нь маш сайн практик болж өгнө. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын онцлог</h1>
+                                                        <ul>
+                                                            <li>Сургалтын систем нь хүүхдэд ирээдүйд хэрэгтэй олон
+                                                                амьдралын болон хувь хүний чадварыг нээхэд түлхэц болон
+                                                                бэлтгэгдсэн. </li>
+                                                            <li>- Шатрын тоглолтын явц дунд тоглогч хэрхэн сэтгэл
+                                                                хөдлөлд автаж шийдвэр гаргаж байна, өрсөлдөгчөө хэрхэн
+                                                                мэдэрч байна зэрэг баруун тархины /EQ/ хөгжилд шатар
+                                                                хэрхэн нөлөөлж буйг, </li>
+                                                            <li>- Олон зүй тогтол бүхий шатрын бодлого, төгсгөлийн онол
+                                                                ажилласнаар тухайн хүүхдийн зүүн тархи /IQ/ хэрхэн
+                                                                хөгжиж тэлж буйг </li>
+                                                            <li>- Шатар дайнаас үүссэн гэдгийн цаана өөрт өгөгдсөн
+                                                                дүрсийг хүүхэд хэрхэн удирдаж, урт хугацааг харж
+                                                                төлөвлөгөө боловсруулж байна зэрэг удирдах ухааныг
+                                                                /Management/ шатраас хэрхэн ойлгож авч буйг</li>
+                                                            <li>- Аливаа шатрын тактикийн буюу тэсрэлттэй эсвэл
+                                                                стратегийн буюу төлөвлөгөө боловсруулах зэрэг байрлалд
+                                                                нарийн дүн шинжилгээ хийж, хамгийн эрсдэл бага, өгөөж
+                                                                өндөр шийдвэр гаргалтыг сонгох нь хувь хүнд хэрхэн
+                                                                шүүмжит сэтгэлгээ /Critical Thinking and Analysis/
+                                                                суулгахыг, энэ нь шатрын ямар дасгал ажлуудад нуун
+                                                                байдгийг </li>
+                                                            <li>- Суралцагч нар дасгал ажлууд хийх болон тэмцээн
+                                                                уралдаанд олон олон унаж босож тэмцэж буй үед багшийн
+                                                                өгч буй зөвлөгөө нь хүүхдэд өсөн, хөгжих сэтгэлгээг
+                                                                /Growth Mindset/ хэрхэн суулгах зэргийг сургалтын
+                                                                системдээ бага багаар нэвтрүүлэн хэрэгжүүлж байгаа нь
+                                                                манай академийн хамгийн том онцлог билээ. </li>
+                                                            <!-- <li>Дээрх чадварууд нь шатарт агуулагдсан байдаг ба
+                                                                академийн багш нар үүнийг ил гаргах дээр анхааран
+                                                                ажиллаж байна. Энэ нь хүүхдүүдэд богино хугацаанд зан
+                                                                төлөвт нь гүн суух боломжгүй тул академийн цахим
+                                                                сургалтыг 6 сар болгосон юм. Үүний дараа үндсэн ангируу
+                                                                элсүүлэн авч илүү нарийн хичээлүүд орно. Цахим ангийн
+                                                                гол үндсэн зорилго бол хүүхдүүдэд шатрын мэдлэг өгөхөөс
+                                                                гадна шатарт хайртай, дуртай болгоход оршино. </li> -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Төлбөрийн мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- 1 сарын төлбөр 180,000₮, 6 сарын төлбөр 1,080,000₮
+                                                            </li>
+                                                            <li>- Төлбөрийг 3 сараар 2 хувааж төлнө. 3 сарын төлбөр
+                                                                540,000₮</li>
+                                                            <li>- Төлбөртэй холбоотой асуултыг 86003553 шууд Мөнхбаяр
+                                                                багштай ярина. </li>
+                                                            <li>- Хаан банк:
+                                                                5018539912
+                                                                Мөнхбаяр
+                                                            </li>
+                                                            <li> Гүйлгээний утга: "нэр, утас, сургалтын төлбөр" гэж
+                                                                бичнэ үү.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="lessonContainer">
+
+                                <div class="lessonLeftContainer">
+                                    <img id="" width="50px"
+                                        class="animate__animated animate__tada animate__infinite myBtnLesson"
+                                        src="./imgs/bishop.png" alt="">
+                                    <h1>СТЕЙНИЦ МША-ИЙН ГАНЦААРЧИЛСАН СУРГАЛТ </h1>
+                                    <ul>
+                                        <li onclick="slideToLesson5(0)">Сургалтын зорилго</li>
+                                        <li onclick="slideToLesson5(1)">Сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson5(2)">Сургалтын онцлог</li>
+                                        <li onclick="slideToLesson5(3)">Ганцаарчилсан сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson5(4)">Ганцаарчилсан сургалтыг ямар үед өгөх вэ?</li>
+                                        <li onclick="slideToLesson5(5)">Төлбөр</li>
+                                        <li onclick="slideToTraining(0)" style="font-weight: bold;">Буцах</li>
+                                    </ul>
+                                </div>
+                                <div class="lessonRightContainer">
+                                    <div class="swiperLessonRight5">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын зорилго</h1>
+                                                        <P>Урт хугацаандаа шатрын мэргэжилтэй хувь хүмүүсийг бэлтгэх
+                                                            буюу шатрын цолонд хүргэх замаар амьдралын олон хувь
+                                                            чадваруудыг шатраас эзэмшсэн бие хүн болгон төлөвшүүлэхэд
+                                                            оршино. </P>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын давуу тал</h1>
+                                                        <ul>
+                                                            <li>- Дэлхийн шатрын холбооны Албан ёсны заах эрхтэй багш
+                                                                нар зааж сургана. </li>
+                                                            <li>- Заагдах хичээл нь 18 жил шатрын спортоор хичээллэсэн,
+                                                                6 жил мэргэжлийн дасгалжуулагчаар ажилласан, академийн
+                                                                үүсгэн байгуулагч, дэлхийн шатрын холбооны мастер,
+                                                                сонирхогчдын дэлхийн аварга, хөрөнгө оруулалт, санхүүч
+                                                                мэргэжилтэй, munkhbayar's chess youtube сувгийн хөтлөгч
+                                                                Мөнхбаяр багшийн боловсруулсан хөтөлбөрийн дагуу хичээл
+                                                                явагдана. </li>
+                                                            <li>- Сургалтын төвөөс шатрын дасгал ажлын ном, шаардлагатай
+                                                                үед өргийн бичиглэлийн дэвтэр гэх мэт сургалтын
+                                                                материалаар хангана. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын онцлог</h1>
+                                                        <ul>
+                                                            <li>Сургалтын систем нь хүүхдэд ирээдүйд хэрэгтэй олон
+                                                                амьдралын болон хувь хүний чадварыг нээхэд түлхэц болон
+                                                                бэлтгэгдсэн. </li>
+                                                            <li>- Шатрын тоглолтын явц дунд тоглогч хэрхэн сэтгэл
+                                                                хөдлөлд автаж шийдвэр гаргаж байна, өрсөлдөгчөө хэрхэн
+                                                                мэдэрч байна зэрэг баруун тархины /EQ/ хөгжилд шатар
+                                                                хэрхэн нөлөөлж буйг, </li>
+                                                            <li>- Олон зүй тогтол бүхий шатрын бодлого, төгсгөлийн онол
+                                                                ажилласнаар тухайн хүүхдийн зүүн тархи /IQ/ хэрхэн
+                                                                хөгжиж тэлж буйг </li>
+                                                            <li>- Шатар дайнаас үүссэн гэдгийн цаана өөрт өгөгдсөн
+                                                                дүрсийг хүүхэд хэрхэн удирдаж, урт хугацааг харж
+                                                                төлөвлөгөө боловсруулж байна зэрэг удирдах ухааныг
+                                                                /Management/ шатраас хэрхэн ойлгож авч буйг</li>
+                                                            <li>- Аливаа шатрын тактикийн буюу тэсрэлттэй эсвэл
+                                                                стратегийн буюу төлөвлөгөө боловсруулах зэрэг байрлалд
+                                                                нарийн дүн шинжилгээ хийж, хамгийн эрсдэл бага, өгөөж
+                                                                өндөр шийдвэр гаргалтыг сонгох нь хувь хүнд хэрхэн
+                                                                шүүмжит сэтгэлгээ /Critical Thinking and Analysis/
+                                                                суулгахыг, энэ нь шатрын ямар дасгал ажлуудад нуун
+                                                                байдгийг </li>
+                                                            <li>- Суралцагч нар дасгал ажлууд хийх болон тэмцээн
+                                                                уралдаанд олон олон унаж босож тэмцэж буй үед багшийн
+                                                                өгч буй зөвлөгөө нь хүүхдэд өсөн, хөгжих сэтгэлгээг
+                                                                /Growth Mindset/ хэрхэн суулгах зэргийг сургалтын
+                                                                системдээ бага багаар нэвтрүүлэн хэрэгжүүлж байгаа нь
+                                                                манай академийн хамгийн том онцлог билээ. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Ганцаарчилсан сургалтын давуу тал</h1>
+                                                        <ul>
+                                                            <li>- Багш зөвхөн нэг хүүхэдтэй харьцаж, тухайн хүүхдийн зан
+                                                                чанар, сэтгэн бодох чадварт тулгуурлаж хичээлийг
+                                                                ойлгуулах арга замыг өөрт нь тохируулан зааж сургана.
+                                                            </li>
+                                                            <li>- Групп сургалтын хичээлээс хөтөлбөр илүү шахалттай
+                                                                хурдан явагдана. /2 сарын хичээлийг 1 сард багтаах
+                                                                хэлбэр байж болдог./</li>
+                                                            <li>- Багштайгаа цагаа тохирох боломжтой. </li>
+                                                            <li>- Групп сургалтад орохтой тэнцүү хэмжээний цагийг багш
+                                                                гаргах хэдий ч төлбөр, цагийн үр ашигт байдлаа бууруулж
+                                                                төлбөр харьцангуй хямд байлгадаг. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Ганцаарчилсан сургалтыг ямар үед өгөх вэ?</h1>
+                                                        <ul>
+                                                            <li>- Улс, ази, дэлхийн томоохон тэмцээн уралдаанд амжилттай
+                                                                оролцох үүднээс урьдчилсан бэлтгэлжилтийг өндөр түвшинд
+                                                                хангах үед</li>
+                                                            <li>- Ямар ч цолтой, түвшин байсан тухайн тамирчинд гацалт
+                                                                үүсдэг. Тэрхүү гацалтыг өөртэй нь тулж ажиллан, түгжээг
+                                                                тайлах үед</li>
+                                                            <li>- Цаг хугацааг хэмнэж, хурдан суралцах хүсэлтэй үед</li>
+                                                            <li>- Цагийн зөрүүнээс үүдэн групп сургалтад орох боломжгүй
+                                                                үед</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Төлбөрийн мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- 1 цагийн 60,000₮ үнэлгээтэй. 7 хоногт 2 удаа эсвэл 3
+                                                                удаагаар авах боломжтой. </li>
+                                                            <li>- 7 хоногт 2 бол нийт 8 удаагийн оролт 480,000₮</li>
+                                                            <li>- 7 хоногт 3 бол нийт 12 удаагийн оролт 720,000₮</li>
+                                                            <li>- 3 сараар төлбөр төлөгдвөл 10% хөнгөлөгдөнө. </li>
+                                                            <li>- Хаан банк:
+                                                                Дансны дугаар - 5018539912
+                                                                Дансны нэр - Мөнхбаяр
+                                                            </li>
+                                                            <li>Гүйлгээний утга - "нэр, утас, сургалтын төлбөр"
+                                                                эдгээрийг бичиж хийгээрэй. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="lessonContainer">
+
+                                <div class="lessonLeftContainer">
+                                    <img id="" width="50px"
+                                        class="animate__animated animate__tada animate__infinite myBtnLesson"
+                                        src="./imgs/pawn.png" alt="">
+                                    <h1>СТЕЙНИЦ МША-ИЙН АМРАЛТЫН ӨДРИЙН СУРГАЛТ</h1>
+                                    <ul>
+                                        <li onclick="slideToLesson6(0)">Сургалтын зорилго</li>
+                                        <li onclick="slideToLesson6(1)">Сургалтын давуу тал</li>
+                                        <li onclick="slideToLesson6(2)">Сургалтын онцлог</li>
+                                        <li onclick="slideToLesson6(3)">Сургалтын мэдээлэл</li>
+                                        <li onclick="slideToLesson6(4)">Төлбөр</li>
+                                        <li onclick="slideToLesson6(5)">Нэмэлт мэдээлэл</li>
+                                        <li onclick="slideToTraining(0)" style="font-weight: bold;">Буцах</li>
+                                    </ul>
+                                </div>
+                                <div class="lessonRightContainer">
+                                    <div class="swiperLessonRight6">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын зорилго</h1>
+                                                        <p>Урт хугацаандаа шатрын мэргэжилтэй хувь хүмүүсийг бэлтгэх
+                                                            буюу шатрын цолонд хүргэх замаар амьдралын олон хувь
+                                                            чадваруудыг шатраас эзэмшсэн бие хүн болгон төлөвшүүлэхэд
+                                                            оршино. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын давуу тал</h1>
+                                                        <ul>
+                                                            <li>Сургалтын систем нь хүүхдэд ирээдүйд хэрэгтэй олон
+                                                                амьдралын болон хувь хүний чадварыг нээхэд түлхэц болон
+                                                                бэлтгэгдсэн. </li>
+                                                            <li>- Шатрын тоглолтын явц дунд тоглогч хэрхэн сэтгэл
+                                                                хөдлөлд автаж шийдвэр гаргаж байна, өрсөлдөгчөө хэрхэн
+                                                                мэдэрч байна зэрэг баруун тархины /EQ/ хөгжилд шатар
+                                                                хэрхэн нөлөөлж буйг, </li>
+                                                            <li>- Олон зүй тогтол бүхий шатрын бодлого, төгсгөлийн онол
+                                                                ажилласнаар тухайн хүүхдийн зүүн тархи /IQ/ хэрхэн
+                                                                хөгжиж тэлж буйг </li>
+                                                            <li>- Шатар дайнаас үүссэн гэдгийн цаана өөрт өгөгдсөн
+                                                                дүрсийг хүүхэд хэрхэн удирдаж, урт хугацааг харж
+                                                                төлөвлөгөө боловсруулж байна зэрэг удирдах ухааныг
+                                                                /Management/ шатраас хэрхэн ойлгож авч буйг</li>
+                                                            <li>- Аливаа шатрын тактикийн буюу тэсрэлттэй эсвэл
+                                                                стратегийн буюу төлөвлөгөө боловсруулах зэрэг байрлалд
+                                                                нарийн дүн шинжилгээ хийж, хамгийн эрсдэл бага, өгөөж
+                                                                өндөр шийдвэр гаргалтыг сонгох нь хувь хүнд хэрхэн
+                                                                шүүмжит сэтгэлгээ /Critical Thinking and Analysis/
+                                                                суулгахыг, энэ нь шатрын ямар дасгал ажлуудад нуун
+                                                                байдгийг </li>
+                                                            <li>- Суралцагч нар дасгал ажлууд хийх болон тэмцээн
+                                                                уралдаанд олон олон унаж босож тэмцэж буй үед багшийн
+                                                                өгч буй зөвлөгөө нь хүүхдэд өсөн, хөгжих сэтгэлгээг
+                                                                /Growth Mindset/ хэрхэн суулгах зэргийг сургалтын
+                                                                системдээ бага багаар нэвтрүүлэн хэрэгжүүлж байгаа нь
+                                                                манай академийн хамгийн том онцлог билээ. </li>
+                                                            <!-- <li>Дээрх чадварууд нь шатарт агуулагдсан байдаг ба
+                                                                академийн багш нар үүнийг ил гаргах дээр анхааран
+                                                                ажиллаж байна. Энэ нь хүүхдүүдэд богино хугацаанд зан
+                                                                төлөвт нь гүн суух боломжгүй тул академийн цахим
+                                                                сургалтыг 6 сар болгосон юм. Үүний дараа үндсэн ангируу
+                                                                элсүүлэн авч илүү нарийн хичээлүүд орно. Цахим ангийн
+                                                                гол үндсэн зорилго бол хүүхдүүдэд шатрын мэдлэг өгөхөөс
+                                                                гадна шатарт хайртай, дуртай болгоход оршино. </li> -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын онцлог</h1>
+                                                        <ul>
+                                                            <li>- Заагдах хичээл нь 18 жил шатрын спортоор хичээллэсэн,
+                                                                6 жил мэргэжлийн дасгалжуулагчаар ажилласан, академийн
+                                                                үүсгэн байгуулагч, дэлхийн шатрын холбооны мастер,
+                                                                сонирхогчдын дэлхийн аварга, хөрөнгө оруулалт, санхүүч
+                                                                мэргэжилтэй, munkhbayar's chess youtube сувгийн хөтлөгч
+                                                                Мөнхбаяр багшийн боловсруулсан хөтөлбөрийн дагуу хичээл
+                                                                явагдана. </li>
+                                                            <li>- Сургалтын төвөөс шатрын дасгал ажлын ном, шатрын
+                                                                тоглолтоо бичих өргийн бичлэгийн дэвтэр, Мөнхбаяр
+                                                                багшийн бичиж буй ном 2021 ондоо багтаж хэвлэлтээс
+                                                                гарахад тухайн ном зэрэг багтсан болно. Хэвлэлтээс
+                                                                гарахаас өмнө сэдэв сэдвээр хэвлэж, тараагдан заагдах
+                                                                болно. </li>
+                                                            <li>- Анги, танхимын тав тухтай байдал нь хүүхдийг
+                                                                суралцахад том түлхэц болдог ба үүгээр Монголын шатрын
+                                                                сургалтын төвүүд дунд тэргүүлж буй. </li>
+                                                            <li>- Академийн бүх багш нараас зөвлөгөө авч, бүгдтэй нь
+                                                                ажиллах боломжтой. </li>
+                                                            <li>- Анги даасан мэргэжлийн шатрын дасгалжуулагч байхаас
+                                                                гадна, 1 ангид нэмэлт 1 туслах багштай. </li>
+                                                            <li>- Мэргэжлийн ангид одоогоор 2 улсын аварга, 4 улсын
+                                                                медаль болон шагналтай хүүхдүүд, 4 өсвөрийн дэлхийн
+                                                                аваргад оролцсон хүүхдүүд хичээллэж байна. </li>
+                                                            <li>- Ахисан шатны ангид тасралтгүй 1 жил хичээллэсэн
+                                                                хүүхдүүд бэлтгэл сургуулилтаа хангаж байна. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Сургалтын мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- Үндсэн хичээл орох өдрүүд Бямба, Ням</li>
+                                                            <li>- Нээгдэх ангиуд: </li>
+                                                            <li>Анхан, дунд, ахисан шатны ДӨРВӨН анги нээгдэнэ. 12*4=48
+                                                                хүүхэд байна. </li>
+                                                            <li>- Цагийн сонголт </li>
+                                                            <li> Өглөөний анги: 10:00 - 12:00</li>
+                                                            <li> Өдрийн анги: 12:30 - 14:30</li>
+                                                            <li>- Мөн амралтын өдөр эрчимтэй бэлтгэл сургуулилтыг хийх
+                                                                хүсэлтэй эцэг, эх, хүүхдүүдэд тохирсон байдлаар
+                                                                10:00-14:30 хүртэл бэлдүүлэх боломжтой.</li>
+                                                            <li>- Анги даасан 1 багш, Нэмэлтээр анги тус бүр нэг туслах
+                                                                багш байна. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="lessonInfo">
+                                                    <div class="lessonInfoText">
+                                                        <h1>Төлбөрийн мэдээлэл</h1>
+                                                        <ul>
+                                                            <li>- 1 сарын төлбөр 180,000₮, 6 сарын төлбөр 1,080,000₮
+                                                            </li>
+                                                            <li>- Төлбөрийг 3 сараар 2 хувааж төлнө. 3 сарын төлбөр
+                                                                540,000₮</li>
+                                                            <li>- Төлбөртэй холбоотой асуултыг 86003553 шууд Мөнхбаяр
+                                                                багштай ярина. </li>
+                                                            <li>- Хаан банк:
+                                                                5018539912
+                                                                Мөнхбаяр
+                                                            </li>
+                                                            <li> Гүйлгээний утга: "нэр, утас, сургалтын төлбөр" гэж
+                                                                бичнэ үү.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="swiper-slide">
+                <div id="comingSoonVideoContainer" class="videoContainer">
+                    <div class="videoBack">
+                        <div class="bg-overlay"></div>
+                        <video id="comingSoonVideo" id="myVideo" autoplay="autoplay" muted loop>
+                            <source src="./video/y2mate.com - A Cinematic CHESS B ROLL Behind The Scenes_1080p_2.mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="videoBody">
+                        <div class="videoTextBack"></div>
+                        <h1>Coming soon</h1>
+                        <ul>
+                            <li>Puzzle</li>
+                            <li style="border-right: 1px solid white;"></li>
+                            <li>Shop</li>
+                            <li style="border-right: 1px solid white;"></li>
+                            <li>Match</li>
+                            <li style="border-right: 1px solid white;"></li>
+                            <li>Lesson</li>
+                            <li style="border-right: 1px solid white;"></li>
+                            <li>News</li>
+                        </ul>
+                        <div class="videoLogo">
+                            <img src="./imgs/Logo.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="contactInfo">
+                    <h1>Холбогдох</h1>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-home"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-phone"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Steinitz.Mongolian.Chess.Academy">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/steinitzchessacademy/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCBCjlLbsnDWlQR3Pbk_Qz5A">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-youtube-play"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div style="display: flex; align-items: center; margin-left: 5%;">
+                    <div class="partners">
+                        <img src="./imgs/pengux.png" alt="">
+                        <img src="./imgs/hover.png" alt="">
+                        <img src="./imgs/mnkhod.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1597754761/magicmouse/magic_mouse-1.0.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/scroll.js"></script>
+    
+
+</body>
+
+</html>

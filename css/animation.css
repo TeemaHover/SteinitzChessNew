@@ -1,0 +1,28 @@
+.homeBackKing {
+    display: inline-block;
+    margin: 0 0.5rem;
+    text-align: center;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    z-index: 1;
+}
+.homeBackKing img{
+    width: 30%;
+}
+.homeBack{
+    position: absolute;
+    text-align: center;
+    animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s;
+
+}
+.homeBack img{
+    width: 80%;
+}
+@media screen and (max-width:600px) {
+
+    .homeBackKing img{
+        width: 50%;
+
+    }
+}

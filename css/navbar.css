@@ -1,0 +1,152 @@
+svg {
+    width: 25px;
+}
+
+svg:hover {
+    color: rgb(255, 255, 255);
+}
+
+#nav {
+    width: 75px;
+    border-bottom: black solid 1px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    display: block;
+    transition: width 200ms ease;
+    list-style: none;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+@media screen and (max-width:600px) {
+    #nav {
+        display: none;
+    }
+}
+
+.link-text {
+    display: none;
+    color: black;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-top: 100%;
+}
+
+#nav ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav ul li button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#nav ul li button:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+#nav:hover .link-text {
+    display: block;
+}
+
+#nav:hover {
+    width: 16rem;
+}
+
+#nav:hover ul {
+    margin-top: 30%;
+}
+
+#nav:hover ul li {
+    width: 80%;
+}
+
+#nav button {
+    display: flex;
+    align-items: center;
+}
+
+#nav button span {
+    margin-left: 20%;
+    font-size: 18px;
+    width: 80%;
+}
+
+#nav:hover button {
+    width: 80%;
+}
+
+#nav:hover svg {
+    min-width: 25px;
+}
+
+.navFIT {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-around;
+    padding: 0 5%;
+    align-items: center;
+}
+
+.navFIT img {
+    width: 58px;
+}
+
+.navFIT h1 {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .navFIT h1 {
+        display: block;
+        color: black;
+        position: absolute;
+        left: 10%;
+        font-weight: bold;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .navBtn {
+        margin-top: 100%;
+    }
+    #nav {
+        width: 100%;
+    }
+    #nav ul {
+        margin-top: 10%;
+    }
+    #nav .navBtn {
+        margin-top: 20%;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: inline !important;
+}

@@ -1,0 +1,133 @@
+.trainingContent {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.trainingContent p {
+    text-align: justify;
+}
+
+.trainingLeft {
+    width: 50%;
+    padding: 5% 5%;
+}
+
+.trainingRight {
+    width: 50%;
+    padding: 5% 5%;
+}
+
+.lessonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    .lessonContainer {
+        flex-direction: column;
+    }
+}
+
+.lessonLeftContainer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lessonLeftContainer h1 {
+    margin-bottom: 5%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.lessonLeftContainer ul li {
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .lessonLeftContainer {
+        width: 100%;
+    }
+    .lessonLeftContainer img {
+        width: 20px;
+    }
+    .lessonLeftContainer h1 {
+        font-size: 13px;
+        text-align: center;
+    }
+    .lessonLeftContainer ul li {
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+.lessonLeftContainer img {
+    margin-bottom: 5%;
+    width: 15%;
+}
+
+.lessonLeftContainer h1 {
+    width: 80%;
+    text-align: center;
+}
+
+.lessonLeftContainer h2 {
+    margin-bottom: 20%;
+}
+
+.lessonRightContainer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    height: 100%;
+}
+
+.lessonRightContainer p {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+}
+
+@media screen and (max-width:600px) {
+    .lessonRightContainer {
+        width: 100%;
+        height: 60%;
+    }
+    .lessonRightContainer p {
+        font-size: 10px;
+    }
+}
+
+.lessonInfo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    width: 80%;
+    text-align: justify;
+    height: 100%;
+    margin: auto;
+}
+
+.lessonInfo h1 {
+    margin-bottom: 5%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+    .lessonInfo ul li {
+        font-size: 10px;
+    }
+}
