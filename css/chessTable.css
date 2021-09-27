@@ -54,11 +54,12 @@
 
 @media screen and (max-width:600px) {
     .videoBody ul {
+        margin-top: -3%;
         width: 60%;
     }
     .videoBody ul li {
         margin-top: 10%;
-        font-size: 12px;
+        font-size: 15px;
         color: white;
     }
 }
