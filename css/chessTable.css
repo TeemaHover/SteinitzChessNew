@@ -7,7 +7,10 @@
 
 .videoContainer {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .videoBody {
@@ -32,7 +35,7 @@
 
 @media screen and (max-width:600px) {
     .videoBody {
-        margin-top: -30%;
+        justify-content: flex-start;
     }
 }
 
@@ -61,7 +64,6 @@
 }
 
 .videoBody h1 {
-    padding-top: 110px;
     font-size: 90px;
     text-transform: uppercase;
     font-weight: bold;
@@ -108,7 +110,7 @@
 
 @media screen and (max-width:600px) {
     .videoTextBack {
-        margin-top: 55%;
+        margin-top: 20%;
     }
 }
 
