@@ -44,6 +44,7 @@ svg:hover {
     flex-direction: column;
     height: 40%;
     justify-content: space-around;
+    align-items: center;
     padding: 0 10px;
     margin-top: 100%;
 }

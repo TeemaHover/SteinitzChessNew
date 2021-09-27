@@ -10,9 +10,7 @@
 
 .swiperTeachers {
     width: 40%;
-    height: 100vh;
-    margin-top: 3%;
-    overflow: hidden;
+    height: 60vh;
 }
 
 @media screen and (max-width:600px) {
@@ -24,12 +22,12 @@
 
 .swiperTeachers .swiper-button-next {
     color: rgb(253, 94, 94);
-    margin-top: -10%;
+    margin-top: 10%;
 }
 
 .swiperTeachers .swiper-button-prev {
     color: rgb(253, 94, 94);
-    margin-top: -10%;
+    margin-top: 10%;
 }
 
 .swiperTeachersContent {

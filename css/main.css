@@ -525,15 +525,17 @@ h2 {
 .teachersContainer {
     display: flex;
     margin-left: 10%;
-    height: 100vh;
+    height: 80vh;
+    align-items: center;
 }
 
 .teachersBox {
     display: flex;
-    width: 100%;
-    margin: 10px;
+    width: 40%;
+    margin-top: 10%;
     overflow: hidden;
-    margin-top: 9%;
+    height: 60vh;
+    align-items: center;
 }
 
 .teachersBox img {
@@ -596,6 +598,7 @@ h2 {
         overflow-y: scroll;
         height: 200px;
         margin-left: 10%;
+        margin-top: -10%;
     }
     .teachersBoxContent ul {
         margin-left: 5%;

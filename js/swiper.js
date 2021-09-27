@@ -2,8 +2,6 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     mousewheel: true,
-    speed: 1000,
-
 });
 
 var nav = document.getElementById("nav");
@@ -56,6 +54,7 @@ const swiperTeachersContent = new Swiper('.swiperTeachersContent', {
     flipEffect: {
         slideShadows: false,
     },
+    allowTouchMove: false,
 
 });
 
