@@ -1,11 +1,3 @@
-// const scrollContainer = document.querySelector("main");
-
-// scrollContainer.addEventListener("wheel", (evt) => {
-//     evt.preventDefault();
-//     scrollContainer.scrollLeft += evt.deltaY;
-// });
-
-
 var modal = document.getElementById("myModal");
 
 var btn = document.getElementById("myBtn");
@@ -42,11 +34,6 @@ window.onclick = function(event) {
     }
 }
 
-
-
-// btnLesson.onclick = function() {
-//   modalLesson.style.display = "block";
-// }
 
 var video = document.querySelector("#comingSoonVideo");
 var videoContainer = document.querySelector("#comingSoonVideoContainer");
