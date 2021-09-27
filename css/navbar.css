@@ -24,21 +24,13 @@ svg:hover {
     z-index: 10;
     height: 100%;
     display: block;
-    -webkit-transition: width 200ms ease;
-    -o-transition: width 200ms ease;
     transition: width 200ms ease;
     list-style: none;
 }
 
 .navContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     height: 70%;
 }
@@ -55,29 +47,17 @@ svg:hover {
 }
 
 #nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: 40%;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0 10px;
     margin-top: 100%;
 }
 
 #nav ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
 }
@@ -116,11 +96,7 @@ svg:hover {
 }
 
 #nav button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -139,19 +115,11 @@ svg:hover {
 }
 
 .navFIT {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: 20%;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 0 5%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 

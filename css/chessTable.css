@@ -6,27 +6,16 @@
 */
 
 .videoContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100vh;
 }
 
 .videoBody {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -40,8 +29,6 @@
 }
 
 .videoBody ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 20%;
 }
@@ -83,11 +70,7 @@
 }
 
 .videoLogo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 50%;
     margin: 0 auto;
@@ -111,8 +94,6 @@
     height: 600px;
     position: absolute;
     background: black;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     z-index: -1;
     opacity: 0.89;
@@ -124,8 +105,6 @@
         height: 200px;
         position: absolute;
         background: black;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         z-index: -1;
         opacity: 0.89;

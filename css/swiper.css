@@ -128,8 +128,6 @@
 
 .swiperTraining .swiper-button-next {
     color: rgb(254, 221, 0);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     margin-right: 10%;
     margin-top: 20%;
@@ -137,8 +135,6 @@
 
 .swiperTraining .swiper-button-prev {
     color: rgb(254, 221, 0);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     margin-left: 10%;
     margin-top: -23%;
