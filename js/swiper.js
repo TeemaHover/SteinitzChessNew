@@ -2,6 +2,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     mousewheel: true,
+
 });
 
 var nav = document.getElementById("nav");
@@ -30,6 +31,7 @@ const swiper2 = new Swiper('.swiper2', {
         slideShadows: false,
     },
 });
+var menu = ['1', '2', '3', '4', '5', ]
 const swiperTeachers = new Swiper('.swiperTeachers', {
     // Optional parameters
     loop: true,
@@ -42,6 +44,14 @@ const swiperTeachers = new Swiper('.swiperTeachers', {
     effect: 'fade',
     fadeEffect: {
         crossFade: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+        renderBullet: function(index, className) {
+            return '<div class="' + className + '">' + (menu[index]) + '</div>';
+        },
     },
 
 });

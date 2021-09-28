@@ -39,6 +39,47 @@
 .swiperTeachers .swiper-button-prev {
     color: rgb(253, 94, 94);
     margin-top: 10%;
+    background-image: url("/imgs/chess-king-solid.png");
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 10px;
+    right: 32%;
+    width: auto !important;
+    left: auto !important;
+    margin: 0;
+}
+
+@media screen and (max-width:600px) {
+    .swiper-pagination {
+        top: 100%;
+        right: 22%;
+    }
+}
+
+.swiper-pagination-bullet {
+    padding: 5px 10px;
+    border-radius: 0;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width:600px) {
+    .swiper-pagination-bullet {
+        border-radius: 20px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
 }
 
 .swiperTeachersContent {

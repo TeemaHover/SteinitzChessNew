@@ -57,6 +57,6 @@ function handleMouseMove(event) {
             videoPlayBackSpeed += videoPlayBackSpeedAmount;
         }
     }
-
-    video.playbackRate = videoPlayBackSpeed;
 }
+
+video.playbackRate = videoPlayBackSpeed;
