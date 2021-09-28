@@ -166,12 +166,20 @@ p {
     animation-duration: 2s;
 }
 
-.headSlideText h1,
-h2 {
+.headSlideText h1 {
     font-size: 70px;
     color: black;
     letter-spacing: 20px;
     font-weight: lighter;
+    text-shadow: 4px 4px rgb(71, 71, 57);
+}
+
+.headSlideText h2 {
+    font-size: 70px;
+    color: black;
+    letter-spacing: 20px;
+    font-weight: lighter;
+    text-shadow: 4px 4px rgb(231, 139, 1);
 }
 
 @media screen and (max-width:600px) {
@@ -252,6 +260,7 @@ h2 {
     color: black;
     letter-spacing: 0;
     width: 25%;
+    text-shadow: 4px 4px rgb(231, 139, 1);
 }
 
 .rankTop h2 {
@@ -785,7 +794,7 @@ h2 {
     height: 100%;
     border-radius: 20px;
     /* -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
     overflow-y: scroll;
     color: white;
     background-color: var(--bg-color);
