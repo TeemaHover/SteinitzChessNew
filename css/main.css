@@ -6,7 +6,7 @@
 */
 
 :root {
-    --bg-color: #00215c;
+    --bg-color: #002064;
     --text-color: #FFD900;
 }
 
@@ -41,6 +41,34 @@ section {
 
 .icon {
     display: none;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffe604 var(--bg-color);
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ce0000;
+    border-radius: 10px;
+    border: 3px groove #ffffff;
 }
 
 
@@ -244,11 +272,10 @@ h2 {
     }
 }
 
-
-}
 .rankMiddle {
     margin-top: 8%;
 }
+
 .rankMiddleImg {
     width: 100%;
     display: -webkit-box;
@@ -257,6 +284,7 @@ h2 {
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
+
 .rankMiddleImgFit {
     width: 30%;
     height: 300px;
@@ -264,13 +292,13 @@ h2 {
     display: -ms-flexbox;
     display: flex;
 }
+
 @media screen and (max-width:600px) {
     .rankMiddle {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
-    
     .rankMiddleImg {
         width: 100%;
         display: -webkit-box;
@@ -281,7 +309,6 @@ h2 {
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    
     .rankMiddleImgFit {
         width: 100%;
         height: 100px;
@@ -291,9 +318,11 @@ h2 {
         margin-top: 10%;
     }
 }
+
 .rankMiddleImgFit img {
     width: 100%;
 }
+
 .rankMiddleText {
     width: 100%;
     display: -webkit-box;
@@ -302,6 +331,7 @@ h2 {
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
+
 @media screen and (max-width:600px) {
     .rankMiddleText {
         width: 100%;
@@ -313,6 +343,7 @@ h2 {
         flex-direction: column;
     }
 }
+
 .rankMiddleTextFit {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -330,6 +361,7 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
 }
+
 @media screen and (max-width:600px) {
     .rankMiddleTextFit {
         margin-left: 20%;
@@ -338,6 +370,7 @@ h2 {
         text-align: center;
     }
 }
+
 .rankBottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -350,18 +383,23 @@ h2 {
     align-items: center;
     margin-top: 5%;
 }
+
 .rankBackChess {
     position: absolute;
     bottom: 0;
     left: 80%;
 }
+
 .rankBackChess img {
     width: 100%;
 }
 
+
 /*Rank End*/
 
+
 /*About Us*/
+
 #aboutUs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -369,18 +407,21 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     margin: 0 10%;
 }
+
 @media screen and (max-width:600px) {
     #aboutUs {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 }
+
 .aboutUsLeft {
     width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
+
 .aboutUsLeftContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -397,6 +438,7 @@ h2 {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
+
 @media screen and (max-width:600px) {
     .aboutUsLeftContainer {
         -webkit-box-orient: vertical;
@@ -404,12 +446,12 @@ h2 {
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    
     .aboutUsLeft {
         width: 0;
         margin-top: 70%;
     }
 }
+
 .aboutUsLeftContainer1 {
     margin-left: 15%;
     display: -webkit-box;
@@ -426,17 +468,20 @@ h2 {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+
 .aboutUsLeftContainer1 h1 {
     color: #FFD900;
     font-size: 250px;
     font-weight: bold;
 }
+
 .aboutUsLeftContainer1 h2 {
     color: red;
     font-size: 30px;
     letter-spacing: 0;
     font-weight: bold;
 }
+
 @media screen and (max-width:600px) {
     .aboutUsLeftContainer1 {
         -webkit-box-orient: horizontal;
@@ -445,12 +490,10 @@ h2 {
         flex-direction: row;
         margin-left: 0%;
     }
-    
     .aboutUsLeftContainer1 h1 {
         width: 300px;
         font-size: 100px;
     }
-    
     .aboutUsLeftContainer1 h2 {
         color: black;
         font-size: 15px;
@@ -458,6 +501,7 @@ h2 {
         margin-left: -50%;
     }
 }
+
 .aboutUsLeftContainer2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -476,9 +520,11 @@ h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 22px;
 }
+
 .aboutUsLeftContainer2 p {
     margin-bottom: 5%;
 }
+
 @media screen and (max-width:600px) {
     .aboutUsLeftContainer2 {
         font-size: 14px;
@@ -486,6 +532,7 @@ h2 {
         width: 80%;
     }
 }
+
 .aboutUsRight {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,9 +544,11 @@ h2 {
     -ms-flex-line-pack: center;
     align-content: center;
 }
+
 .aboutUsRight img {
     width: 100%;
 }
+
 @media screen and (max-width:600px) {
     .aboutUsRight {
         width: 100%;
@@ -508,12 +557,12 @@ h2 {
         align-content: center;
         margin-top: 10%;
     }
-    
     .aboutUsRight img {
         width: 80%;
         margin-left: 10%;
     }
 }
+
 @media screen and (max-width:600px) {
     .aboutUsRight {
         -webkit-box-orient: vertical;
@@ -522,18 +571,23 @@ h2 {
         flex-direction: column;
     }
 }
+
 .abouUsBackChess {
     position: absolute;
     bottom: 0;
     left: 80%;
 }
+
 .abouUsBackChess img {
     width: 100%;
 }
 
+
 /*About Us End*/
 
+
 /*Replay Training*/
+
 #replayTraining {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -551,21 +605,23 @@ h2 {
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 .replayHeading {
     margin-bottom: 3%;
     font-size: 48px;
     font-weight: bold;
     color: #FFD900;
 }
+
 @media screen and (max-width:600px) {
     #replayTraining {
         font-size: 12px;
     }
-    
     .replayHeading {
         font-size: 32px;
     }
 }
+
 .replayTrainingContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -577,6 +633,7 @@ h2 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
 .replayTrainingBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -594,6 +651,7 @@ h2 {
     flex-direction: column;
     text-align: center;
 }
+
 @media screen and (max-width:600px) {
     .replayTrainingContainer {
         text-align: center;
@@ -602,7 +660,6 @@ h2 {
         justify-content: center;
         margin-top: 5%;
     }
-    
     .replayTrainingBox {
         width: 40%;
         border: 1px solid white;
@@ -611,35 +668,76 @@ h2 {
         justify-content: space-between;
     }
 }
+
 .replayTrainingBox img {
     width: 200px;
 }
+
 @media screen and (max-width:600px) {
     .replayTrainingBox img {
         width: 100px;
     }
 }
+
 .replayTrainingBox h3 {
     margin-top: 10%;
     font-weight: bold;
 }
+
 .replayTrainingBox p {
     text-align: center;
 }
 
+
 /*Replay Training End*/
 
+
 /*Teachers*/
+
+.teachersBack {
+    background-image: linear-gradient(to right, var(--bg-color), var(--bg-color));
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    border-radius: 1500px 0 0 1500px;
+    left: 52%;
+}
+
+.teachersBackImg {
+    background-image: linear-gradient(to right, var(--bg-color), var(--bg-color));
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .teachersBack {
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        left: 0;
+        border-radius: 1500px 1500px 0 0;
+    }
+    .teachersBackImg {
+        width: 100%;
+        height: 50%;
+        right: 0;
+    }
+}
+
 .teachersContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 10%;
+    margin-left: 5%;
     height: 80vh;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
+
 .teachersBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -652,6 +750,7 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .teachersBox img {
     position: absolute;
     max-width: 100%;
@@ -659,12 +758,12 @@ h2 {
     object-fit: cover;
     border-radius: 10%;
 }
+
 @media screen and (max-width:600px) {
     .swiperBox img {
         max-width: 90%;
         height: 100%;
     }
-    
     .teachersBox {
         margin: 0;
         margin-top: 10%;
@@ -672,30 +771,33 @@ h2 {
         -ms-flex-pack: center;
         justify-content: center;
     }
-    
     .teachersBox img {
         height: 250px;
     }
 }
+
 .teachers {
     background-color: white;
 }
+
 .teachersBoxContent {
     width: 100%;
-    background-color: white;
     height: 100%;
-    background-color: white;
     border-radius: 20px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    /* -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
     overflow-y: scroll;
+    color: white;
 }
+
 .teachersBoxContent ul {
     margin-left: 10%;
 }
+
 .teachersBoxContent h3 {
     padding: 5%;
 }
+
 @media screen and (max-width:600px) {
     .teachersContainer {
         -webkit-box-orient: vertical;
@@ -705,12 +807,10 @@ h2 {
         margin-left: 0;
         height: 80vh;
     }
-    
     .teachersBox {
         width: 100%;
         margin-left: 0%;
     }
-    
     .teachersBoxContent {
         width: 80%;
         overflow-y: scroll;
@@ -718,21 +818,21 @@ h2 {
         margin-left: 10%;
         margin-top: -10%;
     }
-    
     .teachersBoxContent ul {
         margin-left: 5%;
     }
-    
     .teachersBoxContent ul li {
         font-size: 12px;
     }
 }
+
 .teachersBackChess {
     width: 100%;
     position: absolute;
     bottom: 0;
     z-index: 100000;
 }
+
 .teachersBackChessLeft {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -741,24 +841,28 @@ h2 {
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 .teachersBackChessLeft img {
     width: 20%;
 }
 
+
 /*Teachers End*/
 
+
 /*CEO*/
+
 .ceoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-family: 'Oswald', sans-serif;
 }
+
 @media screen and (max-width:600px) {
     .ceo {
         margin-top: 25%;
     }
-    
     .ceoContainer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -769,53 +873,59 @@ h2 {
         align-items: center;
     }
 }
+
 .ceoContainerLeft {
     width: 50%;
     margin-left: 15%;
     margin-top: 4%;
 }
+
 @media screen and (max-width:600px) {
     .ceoContainerLeft {
         margin-left: 0;
         width: 70%;
     }
-    
     .ceoContainerLeft img {
         width: 100%;
     }
 }
+
 .ceoContainerRight {
     width: 50%;
     margin-top: 4%;
     margin-right: 20%;
 }
+
 .ceoContainerRight h1 {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 10px;
 }
+
 @media screen and (max-width:600px) {
     .ceoContainerRight {
         width: 80%;
         margin-right: 0;
         margin-top: 5%;
     }
-    
     .ceoContainerRight h1 {
         font-size: 25px;
     }
 }
+
 .ceoContainerRight p {
     font-size: 20px;
     font-weight: 400;
     color: #2B2A28;
 }
+
 @media screen and (max-width:600px) {
     .ceoContainerRight p {
         font-size: 15px;
         margin-top: 5%;
     }
 }
+
 .ceoContainerBottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -823,15 +933,18 @@ h2 {
     margin-left: 40%;
     font-size: 25px;
 }
+
 .ceoContainerBottom h3 {
     margin-bottom: 10%;
 }
+
 .ceoContainerBottom p {
     font-size: 50px;
     color: #FFD900;
     margin: 0;
     font-weight: bold;
 }
+
 @media screen and (max-width:600px) {
     .ceoContainerBottom {
         margin-left: 0%;
@@ -841,9 +954,12 @@ h2 {
     }
 }
 
+
 /*CEO End*/
 
+
 /*Partners*/
+
 .partners {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -856,9 +972,11 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
 }
+
 .partners img {
     width: 20%;
 }
+
 @media screen and (max-width:600px) {
     .partners {
         display: -webkit-box;
@@ -872,10 +990,10 @@ h2 {
         -ms-flex-pack: center;
         justify-content: center;
     }
-    
     .partners img {
         width: 55%;
     }
 }
+
 
 /*Partners End*/
