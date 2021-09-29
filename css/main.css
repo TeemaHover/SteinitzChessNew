@@ -81,6 +81,7 @@ section {
 * {
     scrollbar-width: thin;
     scrollbar-color: #ffe604 var(--bg-color);
+    border-radius: 20px;
 }
 
 
