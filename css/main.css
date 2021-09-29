@@ -51,8 +51,8 @@ section {
 }
 
 .cursor {
-    width: 40px;
-    height: 40px;
+    width: 5px;
+    height: 5px;
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
